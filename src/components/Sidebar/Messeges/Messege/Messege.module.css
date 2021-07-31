@@ -1,0 +1,44 @@
+
+.Form img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+.Form {
+    background-color: white;
+    /*#4f6294;*/
+    width: 700px;
+
+    border-radius: 15px;
+    color: black;
+    font-weight: 200;
+    font-size: 22px;
+    position: relative;
+    top: -730px;
+    left: 740px;
+    margin-bottom: 30px;
+
+
+}
+.MessagesTime{
+    position: relative;
+    top: -80px;
+    left: 100px;
+    opacity: 0;
+}
+.Form span{
+    position: relative;
+    top: -45px;
+    left: 20px;
+}
+.messege{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    word-wrap: break-word;
+    width: 580px;
+}

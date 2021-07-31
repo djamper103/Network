@@ -1,0 +1,129 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    'mainContent ' 
+   'contactInfo ';
+    grid-template-rows: auto ;
+   max-width: 1200px;
+   max-height: 800px;
+   margin: 80px auto;
+}
+.mainContent{
+    grid-area: mainContent;
+    display: grid;
+    grid-template-areas:
+    ' aboutUs login';
+    grid-template-columns: auto ;
+}
+.login{
+    grid-area: login;
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+}
+.loginInput input{
+    border-radius: 20px;
+    line-height: 40px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}
+.login h3{
+   font-size: 32px;
+}
+.aboutUs{
+    grid-area: aboutUs;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+.aboutUs p{
+    display: flex;
+
+}
+.aboutUs h3{
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+.rememberMe{
+    display: flex;
+    font-size: 24px;
+}
+.rememberMe input{
+    height: 20px; 
+    position: relative;
+    left: 10%;
+    top:5px;
+}
+.rememberMe span{
+    position: relative;
+    right: 15%;
+}
+
+.captcha input{
+    border-radius: 20px;
+    line-height: 40px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}
+.loginButton{
+    margin-top: 30px;
+}
+.loginButton button{
+    display: block;
+    margin: 0 auto 20px;
+
+    width: 300px;
+    height: 60px;
+    background-color: rgba(219,26,26,.87);
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.userInfo{
+    grid-area: contactInfo;
+    grid-template-areas:
+    'contactLinks'
+    ' userInfo ';
+    grid-template-rows: auto ;
+}
+.contactLinks{
+    grid-area: contactLinks;
+    margin: 50px 0 20px;
+    font-size: 34px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+.contactLinks a{
+   margin-left: 20px;
+   color: black;
+   transition: 0s;
+}
+.contactLinks span{
+    position: relative;
+    top:-4px;
+}
+.contactLinks a:hover {
+    color: #f00;
+    /*#ec5990;*/
+}
+.userInfo{
+    grid-area: userInfo;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+/* @media all and (max-width: 1000px) {
+
+  
+} */

@@ -1,0 +1,171 @@
+*{
+    transition: 0.5s;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+
+.ProfileInfo a:hover{
+    color: #f10404;
+}
+.Profile img {
+    width: 200px;
+    height: 184px;
+    position: relative;
+    z-index: 0;
+    background: white;
+    left:470px;
+    top:-1626px;
+
+
+}
+.Status{
+    position: relative;
+    left:558px;
+    top:-1630px;
+
+}
+.Status input{
+    position: relative;
+    left:-65px;
+    top:-2px;
+    background-color: #efefef;
+    text-align: center;
+    width: 150px;
+    border-radius: 40px;
+    border: 0;
+}
+.Profile{
+    color: white;
+}
+.Profile li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.Tent img{
+    width: 1860px;
+    height: 260px;
+    position: relative;
+    z-index: 0;
+    top:-15px
+
+
+}
+.WhiteLine1{
+    top:-18px;
+    position: relative;
+    z-index: 0;
+    width: 1860px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+}
+.WhiteLine1 a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-indent: 4em;
+    font-size: 18px;
+    position: relative;
+    top:12px;
+    left:780px;
+
+}
+
+.WhiteSquare{
+    position: relative;
+    z-index: 0;
+    width: 220px;
+    height: 220px;
+    background: white;
+    left:460px;
+    top:-150px;
+}
+.WhiteLine2{
+    position: relative;
+    z-index: 0;
+    width: 730px;
+    height: 70px;
+    background: white;
+    left:680px;
+    top:-220px;
+}
+.WhiteLine2 a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    font-size: 18px;
+    position: relative;
+    left:100px;
+    top: -5px;
+}
+.WhiteLine2 input{
+
+    position: relative;
+    top:25px;
+    left:12px;
+    opacity: 0%;
+}
+.WhiteLine3{
+    position: relative;
+    width: 680px;
+    height: 550px;
+    background: white;
+    left:730px;
+    top:-200px;
+    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+}
+.WhiteLine4{
+    position: relative;
+    width: 240px;
+    height: 550px;
+    background: white;
+    left:460px;
+    top:-766px;
+    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+}
+.WhiteLine5{
+    position: relative;
+    width: 950px;
+    height: 80px;
+    background: white;
+    left:460px;
+    top:-746px;
+    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+}
+
+
+.WhiteLine4   a{
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 25px;
+    top:30px;
+    position: relative;
+
+}
+/*.WhiteLine4 a:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: -5px;*/
+/*    left: 0;*/
+/*    width: 180px;*/
+/*    height: 1px;*/
+/*    background: #e3e2e2;*/
+/*}*/
+.WhiteLine4 li {
+    list-style-type: none;
+}
+
+.AddPhoto{
+    position: relative;
+    left:-90px;
+    top: 30px;
+
+}

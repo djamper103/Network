@@ -1,0 +1,12 @@
+.people{
+    padding: 20px;
+}
+
+.person:active{
+    color: rgb(196, 16, 16);
+}
+.people img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}

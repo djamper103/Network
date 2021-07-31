@@ -1,0 +1,43 @@
+.Search input{
+    width: 280px;
+    height: 28px;
+    border-radius: 40px;
+    text-align: left;
+    justify-content: left;
+    margin-right: 50px;
+    font-size: 17px;
+    position: relative;
+    left: 60px;
+    top: 60px;
+
+}
+.Search button {
+    position: relative;
+    left:-113px;
+    top: 60px;
+    height: 26px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(217, 52, 52, 0.87);
+    justify-content: center;
+    font-size: 17px;
+
+
+}
+.Search button:hover {
+    opacity: 1;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(87, 11, 11, 0.2);
+}
+.Search :before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -168px;
+    width: 880px;
+    height: 2px;
+    background: #e3e2e2;
+    top: 50px;
+}
+

@@ -1,0 +1,30 @@
+.posts{
+    color: white;
+    padding: 10px;
+}
+.Form input{
+    border-radius: 6px;
+    line-height: 40px;
+    width: 400px;
+    height:80px;
+
+}
+
+.Form button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    left: 80px;
+
+}
+.newpost{
+    color: #000;
+}
+.newpost img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}

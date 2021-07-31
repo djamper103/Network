@@ -1,0 +1,113 @@
+.Video{
+    width: 1000px;
+    height: 1200px;
+    background-color: white;
+    position: relative;
+    top:0px;
+    left:420px;
+    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+}
+
+.Video h3{
+    position: relative;
+    top: 30px;
+    left: 60px;
+
+}
+.Video h3:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 880px;
+    height: 2px;
+    background: #e3e2e2;
+    top: 40px;
+}
+.parent {
+    width: 1000px;
+    height: 900px;
+    display:grid;
+    grid-template-areas:
+            'Logo HeaderMain Login '
+            'Logo1 HeaderMain1 Login1 '
+            'Logo2 HeaderMain2 Login2 ';
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;;
+    position: relative;
+    top: -1000px;
+    left: 470px;
+}
+.parent video{
+
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(135, 132, 132, 0.5);
+    outline:none;
+}
+
+
+.child {
+    grid-area: Logo;
+
+}
+.child1 {
+    grid-area: HeaderMain;
+
+}
+.child1 {
+    grid-area: Login;
+
+}
+.child3 {
+    grid-area: Logo1;
+
+}
+.child4 {
+    grid-area: HeaderMain1;
+
+}
+.child5 {
+    grid-area: Login1;
+
+}
+.child6 {
+    grid-area: Logo2;
+
+}
+.child7 {
+    grid-area: HeaderMain2;
+
+}
+.child8 {
+    grid-area: Login2;
+
+}
+
+.Like{
+    position: relative;
+    left:0px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.Messages{
+    position: relative;
+    left:170px;
+    top: -15px;
+    font-size: 18px;
+}
+.Minutemailer{
+    position: relative;
+    left:210px;
+    top: -38px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
