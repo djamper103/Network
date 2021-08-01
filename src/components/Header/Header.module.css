@@ -12,9 +12,11 @@
     font-family: 'Popins', sans-serif;
     width: 100%;
     height: 70px;
+    padding: 0;
 }
 .Header a{
 font-size: 32px;
+color: black;
 }
 
 .Header a:hover {
@@ -59,57 +61,47 @@ font-size: 32px;
     flex-wrap: wrap;
 }
 .Login a{
+    position: relative;
     color: black;
     text-decoration: none;
     letter-spacing: 2px;
     text-indent: 1.5em;
-    margin-top: 23px;
+    top: 25px;
+}
+.menu{
+    display: none;
 }
 
-
-@media all and (max-width: 1600px) {
-    .Header a{
-        font-size: 29px;
-    }
-}
 @media all and (max-width: 1500px) {
-    .Header a{
-        font-size: 27px;
-    }
     .logo a{
         font-size: 34px;
     }
     .logo{
-        margin-top: 19px;
+        top: 23px;
+        left: 35px;
     }
 }
-@media all and (max-width: 1300px) {
-    .Header {
-        grid-template-columns: auto ;
 
-}
-.Header a{
-    font-size: 27px;
-    letter-spacing: 1px;
-    text-indent: 1em;
-    margin-top: 18px;
-}
-.logo a{
-    font-size: 28px;
-}
-.logo{
-    margin-top: 20px;
-    margin-left: 10px;
-}
 
-}
-@media all and (min-width: 1000px) {
-  .menu{
-      display: none;
-  }
-
-}
 @media all and (max-width: 1000px) {
+    .Header{
+        grid-template-columns: 1.6fr 5fr 4.7fr ;
+    }
+    .logo{
+        top: 25px;
+        left: 35px;
+    }
+    .Header a{
+        font-size: 29px;
+    }
+    .logo a{
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 800px) {
+    .menu{
+        display:block;
+    }
 
 .HeaderMain a{
    display: none;
@@ -119,20 +111,14 @@ font-size: 32px;
     display:grid;
     grid-template-areas:
             'menu Logo Login ';
-    grid-template-columns: 1fr 2fr 5.9fr ;
+    grid-template-columns: 1.5fr 2fr 2fr ;
     height: 70px;
     position: fixed;
     z-index: 100;
 }
-.Header a{
-    font-size: 29px;
-}
 .logo{
-    margin-top: 17px;
+    margin-top: 0px;
     margin-left: 0px;
-}
-.logo a{
-    font-size: 30px;
 }
 
 .menu{
@@ -154,126 +140,64 @@ font-size: 32px;
     background-color: white;
     display: flex;
     flex-direction:column;
-    font-size: 20px;
-    width: 135%;
+    width: 92%;
     z-index: 2;
     background-color: white;
+    position: relative;
+    top: -12px
 }
 .menu1 a{
-    margin-left: -26px;
-    font-size: 42px;
+    position: relative;
+    left: -26px;
+    font-size: 52px;
 }
 
 .menu2{
     transform: translateX(-130%);
 }
-.Header a{
-    max-height: 20px;
-}
 
 }
+@media all and (max-width: 700px) {
+    .menu1{
+        width: 98%;
+    }
+     .menu1 a{
+        font-size: 45px;
+    }
+}
+@media all and (max-width: 600px) {
+    .menu1{
+        width: 103%;
+    }
+     .menu1 a{
+        font-size: 41px;
+    }
+}
+@media all and (max-width: 500px) {
+   
+    .menu1{
+        width: 105%;
+    }
+     .menu1 a{
+        font-size: 34px;
+    }
+}
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 400px) {
     .Header{
-            grid-template-columns: 1fr 1.2fr 5.8fr ;
-            height: 60px;
+        grid-template-columns: 1.5fr 2fr 2fr;
     }
     .Header a{
         font-size: 22px;
-        text-indent: 0.7em;
-    }
-    .logo a{
-        font-size: 23px;
-    }
-    .logo{
-        margin-top: 18px;
     }
     .menu{
-        top:16px;
-        width: 162%;
+        top:20px;
+    
     }
     .menu1{
-        width: 162%;
+        width: 130%;
     }
-    .menu1 a{
-        font-size: 40px;
-    }
-}
-
-@media all and (max-width: 500px) {
-
-    .Header{
-        grid-template-columns: 1fr 1.3fr 5.8fr ;
-        height: 50px;
-    }
-    .Header a{
-        font-size: 18px;
-        text-indent: 0.6em;
-    }
-    .logo a{
-        font-size: 18px;
-        
-    }
-    .logo{
-        margin-top: 18px;
-        margin-left: 0px;
-    }
-    .menu1{
-        width: 142%;
-    }
-    .menu1 a{
-        font-size: 26px;
-    }
-    .menu{
-        top:9px;
-        width: 142%;
-    }
-}
-@media all and (max-width: 400px) {
-
-    .Header{
-        grid-template-columns: 0.1fr  auto ;
-        height: 40px;
-    }
-    .Header a{
-        font-size: 13px;
-        text-indent: 0.5em;
-    }
-    .logo{
-        display: none;
-    }
-    .menu{
-        top:5px;
-        width: 140%;
-    }
-    .menu1{
-        width: 140%;
-    }
-    .menu1 a{
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 300px) {
-
-    .Header{
-        grid-template-columns: 0.1fr  auto ;
-        height: 40px;
-    }
-    .Header a{
-        font-size: 13px;
-        text-indent: 0.5em;
-    }
-    .logo{
-        display: none;
-    }
-    .menu{
-        top:5px;
-        width: 140%;
-    }
-    .menu1{
-        width: 140%;
-    }
-    .menu1 a{
-        font-size: 24px;
+     .menu1 a{
+        font-size: 32px;
     }
 }

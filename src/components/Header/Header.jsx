@@ -16,7 +16,7 @@ const Header = ({Logoutthunk,isAuth}) => {
             <div className={style.HeaderMain}>
 
                 <NavLink to='/News'>News</NavLink>
-                <NavLink to='/Messeges'>Message</NavLink>
+                <NavLink to='/Messeges'>Messages</NavLink>
                 <NavLink to='/Profile'>Profile</NavLink>
 
             </div>
@@ -24,10 +24,9 @@ const Header = ({Logoutthunk,isAuth}) => {
             <div className={style.menu}>
                 <button onClick={()=>setActiveMenu(!activeMenu)}>{activeMenu?<IoCloseOutline size = '35px'/>:<BsList size = '35px'/>}</button>
                 <ul className={activeMenu?style.menu1:style.menu2} onClick={()=>setActiveMenu(false)} >
-                    <li><NavLink to='/Shop'>Home</NavLink></li>
-                    <li><NavLink to='/Man'>Man</NavLink></li>
-                    <li><NavLink to='/Woman'>Woman</NavLink></li>
-                    <li><NavLink to='/Shoes'>Shoes</NavLink></li>
+                    <li><NavLink to='/News'>News</NavLink></li>
+                    <li><NavLink to='/Messeges'>Messages</NavLink></li>
+                    <li><NavLink to='/Profile'>Profile</NavLink></li>
                 </ul>
             </div>
             

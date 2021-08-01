@@ -1,109 +1,94 @@
-.Video{
-    width: 1000px;
-    height: 1200px;
+.Container{
+    display: grid;
+    grid-template-areas:
+    'Header'
+    'maincontent';
+    grid-template-rows: 0.2fr auto;
     background-color: white;
-    position: relative;
-    top:0px;
-    left:420px;
     box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+    margin: 50px auto;
+    max-width: 1000px;
 }
-
-.Video h3{
-    position: relative;
-    top: 30px;
-    left: 60px;
-
+.Header{
+    grid-area: Header;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
-.Video h3:before {
-    content: '';
+.Header h3{
+   position: relative;
+   left:5%;
+   top: 10%;
+}
+.Header h3::before {
+    content: "";
     position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 880px;
+    width: 900px;
     height: 2px;
     background: #e3e2e2;
-    top: 40px;
+    top: 140%;
 }
-.parent {
-    width: 1000px;
-    height: 900px;
-    display:grid;
-    grid-template-areas:
-            'Logo HeaderMain Login '
-            'Logo1 HeaderMain1 Login1 '
-            'Logo2 HeaderMain2 Login2 ';
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;;
+.Search{
     position: relative;
-    top: -1000px;
-    left: 470px;
+    top:30px;
+    left: 5%;
 }
-.parent video{
-
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(135, 132, 132, 0.5);
-    outline:none;
-}
-
-
-.child {
-    grid-area: Logo;
-
-}
-.child1 {
-    grid-area: HeaderMain;
-
-}
-.child1 {
-    grid-area: Login;
-
-}
-.child3 {
-    grid-area: Logo1;
-
-}
-.child4 {
-    grid-area: HeaderMain1;
-
-}
-.child5 {
-    grid-area: Login1;
-
-}
-.child6 {
-    grid-area: Logo2;
-
-}
-.child7 {
-    grid-area: HeaderMain2;
-
-}
-.child8 {
-    grid-area: Login2;
-
+.Search input{
+    width: 280px;
+    height: 28px;
+    border-radius: 40px;
+    text-align: left;
+    justify-content: left;
+    font-size: 17px;
 }
 
-.Like{
+.Search button{
     position: relative;
-    left:0px;
-    top: 10px;
+    top: 0px;
+    left: -124px;
+    height: 26px;
+    width: 120px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(217,52,52,.87);
+    justify-content: center;
+    font-size: 17px;
+}
+.Search ::before {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 2px;
+    background: #e3e2e2;
+    top: 180%;
+    left: -136%;
+}
+
+.maincontent{
+    grid-area: maincontent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Video{
+    margin: 0 50px 50px;
+}
+
+.videoMain video{
+    object-fit: cover;
+}
+.Post button{
+   margin-right: 3px;
+}
+.Post button:hover{
+    color:red;
+ }
+
+.Post span{
+    position: relative;
     font-size: 18px;
+    top:-5px;
+    left:-2px;
 }
-
-.Messages{
-    position: relative;
-    left:170px;
-    top: -15px;
-    font-size: 18px;
-}
-.Minutemailer{
-    position: relative;
-    left:210px;
-    top: -38px;
-    font-size: 18px;
-}
-
-
 
 
 

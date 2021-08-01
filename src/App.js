@@ -14,7 +14,6 @@ import {initializationthunk} from "./Redux/App-reducer";
 import LoadingScreen from "./Common/Loading Screen";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
 import ProfileDataForm from "./components/Sidebar/Profile/Profileinfo/ProfileDataForm";
-import HomeContainer from "./components/Sidebar/Home/HomeContainer";
 import NewsContainer from "./components/Sidebar/News/NewsContainer";
 import VideoContainer from "./components/Sidebar/Video/VideoContainer";
 
@@ -53,18 +52,18 @@ class App extends React.Component {
 
                 <div className='Content'>
                     <HeaderContainer/>
-                    <div className='Maincontent'>
-                        {/* <SidebarContainer/>
+                     <div className='Maincontent'>
+                        {/* <SidebarContainer/> */}
                         <Route exact path='/Profile/:userId?' render={() => <ProfileContainer/>}/>
                         <Route exact path='/ProfileDataForm' render={() => <ProfileDataForm/>}/>
                         <Route exact path='/Messeges' render={() => <MessegesContainer/>}/>
                         <Route exact path='/Users' render={() => <UsersContainer/>}/>
                         <Route exact path='/News' render={() => <NewsContainer/>}/>
-                        <Route exact path='/Video' render={() => <VideoContainer/>}/> */}
-                        {/* <Route exact path='/Login' render={() => <LoginContainer/>}/>
-                        <Route exact path='/Registration' render={() => <RegistrationContainer/>}/> */}
+                        <Route exact path='/Video' render={() => <VideoContainer/>}/>
+                         <Route exact path='/Login' render={() => <LoginContainer/>}/>
+                        <Route exact path='/Registration' render={() => <RegistrationContainer/>}/>
                     </div>
-                    {/* <Footer/> */}
+                    <Footer/>
                 </div>
             );
         }

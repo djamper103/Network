@@ -36,7 +36,7 @@ const Login = ({Loginingthunk,isAuth, captcha,}) => {
 <div className={style.container}>
 <div className={style.mainContent}>
     <div className={style.aboutUs}>
-        <h3>About Us</h3>
+        <h3>ABOUT US</h3>
         <p> &nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore etea dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div className={style.login}>

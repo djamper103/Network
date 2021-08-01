@@ -28,11 +28,9 @@ a:hover {
 
 }
 button{
-
   border: none;
   background: transparent;
 }
-
-
-
-
+a{
+  text-decoration: none;
+}
