@@ -10,7 +10,7 @@
     grid-area: people;
     margin: 0px 50px 20px 0px;
     background-color: white;
-    width: 300px;
+    width: 240px;
     box-shadow: 0 0 8px rgb(135 132 132 / 50%);
 }
 .main{
@@ -47,7 +47,7 @@
         max-width: 900px;
     }
     .people{
-        margin: 0px 50px 20px 0px;
+        margin: 0px 50px 20px 20px;
         width: 200px;
     }
     .main{
@@ -59,8 +59,8 @@
         max-width: 800px;
     }
     .people{
-        margin: 0px 50px 20px 62px;
-        width: 120px;
+        margin: 0px 30px 20px 62px;
+        width: 150px;
     }
     .main{
         margin-right: 60px;
@@ -68,17 +68,29 @@
 }
 @media all and (max-width: 800px) {
     .container{
-        max-width: 700px;
-        margin: 100px auto 50px;
+        max-width: 800px;
+        margin: 100px auto 40px;
     }
     .people{
-        margin: 0px 40px 20px 70px;
-        width: 90px;
+        margin: 0px 20px 20px 70px;
+        width: 110px;
     }
     .main{
-        margin-right: 60px;
+        margin-right: 10px;
     }
+
 }
+@media all and (max-width: 600px) {
+    .people{
+        margin: 0px 20px 20px 70px;
+        width: 100px;
+    }
+    .main{
+        margin-right: 10px;
+    }
+
+}
+
 
 
 

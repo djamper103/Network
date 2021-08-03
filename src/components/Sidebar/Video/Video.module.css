@@ -74,22 +74,168 @@
 .Video{
     margin: 0 50px 50px;
 }
+.videoMain{
+    width: 300px;
+    height: 300px;
+}
 .videoMain video{
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
-.Post button{
-   margin-right: 3px;
-}
+.Post {
+    margin-top: 5px;
+ }
+
 .Post button:hover{
     color:red;
  }
 
 .Post span{
-    position: relative;
-    font-size: 18px;
-    top:-5px;
-    left:-2px;
+    font-size: 18px; 
 }
+.Post button{
+    font-size: 30px;
+}
+@media all and (max-width: 1400px) {
+    .Container{
+        margin: 50px auto;
+        max-width: 1000px;
+    }
+}
+@media all and (max-width: 1200px) {
+    .Container{
+        margin: 50px auto;
+        max-width: 800px;
+    }
+    .Header h3::before {
+        width: 700px;
+    }
+    .Search ::before {
+        width: 700px;
+    }
+    
+}
+@media all and (max-width: 1000px) {
+    .Container{
+        margin: 50px auto;
+        max-width: 680px;
+    }
+    .Video{
+        margin: 0px 20px 20px;
+    }
+    .videoMain{
+        width: 200px;
+        height: 200px;
+    }
+    .videoMain video{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .Post {
+        margin-left: -10px;
+    }
+.Post span{
+    font-size: 14px;
+}
+.Post button{
+    font-size: 19px;
+}
+.Header h3::before {
+    width: 600px;
+}
+.Search ::before {
+    width:600px;
+}
+}
+@media all and (max-width: 800px) {
+    .Container{
+        margin: 100px 100px 50px 150px;
+        max-width: 650px;
+    }
+    .Video{
+        margin: 0px 20px 20px 0px;
+    }
+    .videoMain{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .videoMain video{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .Post {
+    position: relative;
+    left: 21px;
+    }
+.Post span{
+    font-size: 14px;
+}
+.Post button{
+    font-size: 19px;
+}
+.Header h3::before {
+    width: 340px;
+}
+.Search {
+    display: flex;
+    flex-direction: column;
+}
+.Search ::before {
+    width:340px;
+    top: 180%;
+    left: 0%;
+}
+.Search input{
+    width: 200px;
+    height: 28px;
+    margin: 0 auto 0 28%;
+}
+
+.Search button{
+    margin: 10px auto 0 38%;
+    position: static;
+}
+}
+@media all and (max-width: 700px) {
+    .Search input{
+        margin: 0 auto 0 20%;
+    }
+    
+    .Search button{
+        margin: 10px auto 0 33%;
+    }
+
+}
+@media all and (max-width: 600px) {
+    .Search input{
+        width: 170px;
+    height: 28px;
+        margin: 0 auto 0 15%;
+    }
+    
+    .Search button{
+        margin: 10px auto 0 ;
+    }
+
+.Header h3::before {
+    width: 240px;
+}
+.Search ::before {
+    width:220px;
+}
+
+}
+
+
+
+
+
+
+
 
 
 

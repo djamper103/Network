@@ -30,3 +30,33 @@
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(87, 11, 11, 0.2);
 }
+@media all and (max-width: 1000px) {
+    .Form input{
+        max-width: 300px;
+    }
+    .Form button{
+        width: 180px;
+    }
+}
+@media all and (max-width: 700px) {
+    .Form input{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .Form button{
+        width: 140px;
+        font-size: 14px;
+        margin: 10% 20%;
+    }
+    .messageInput{
+        display: flex;
+        flex-direction: column;
+    }
+    .messageInput img{
+        margin: 0 auto;
+    }
+    .Form img{
+        position: static;
+    }
+    
+}

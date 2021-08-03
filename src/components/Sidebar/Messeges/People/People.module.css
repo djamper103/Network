@@ -1,25 +1,61 @@
 .people{
     padding: 20px;
 }
-
-.person:active{
+.people a{
+    color: black;
+}
+.people a:hover{
     color: rgb(196, 16, 16);
 }
 .people img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
 }
-@media all and (max-width: 1000px) {
-    .people{
-        padding: 10px;
+.people span{
+    position: relative;
+    font-size: 32px;
+    top:-25px;
+    left: 10%;
+}
+
+
+@media all and (max-width: 1600px) {
+    .people img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
     }
+    .people span{
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 1000px) {
     .people img{
         width: 50px;
         height: 50px;
         border-radius: 50px;
     }
     .people span{
-        font-size: 18px;
+        font-size: 24px;
     }
+    .people span{
+        top:-14px;
+        left: 8%;
+    }
+    
 }
+@media all and (max-width: 800px) {
+    .people img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .people span{
+        font-size: 24px;
+        top:5px;
+        left: 0;
+    }  
+}
+
+

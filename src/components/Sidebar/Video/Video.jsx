@@ -53,14 +53,14 @@ const Video = ({}) => {
                     state.map(item=>(
                         <div className={style.Video} key={item.id} >
                             <div className={style.videoMain}>
-                                <video width="300" height="300" controls preload="auto">
+                                <video controls preload="auto">
                                     <source src={item.url} type="video/webm"/>
                                 </video>
                             </div>
                             <div className={style.Post}>
-                                <button><BiLike size="30px"/></button><span>{like} people like this</span>
-                                <button><TiMessages size="30px"/></button><span> {messages}</span>
-                                <button><SiMinutemailer size="30px"/></button><span>{minutemailer}</span> 
+                                <button><BiLike /></button><span>{like} people like this</span>
+                                <button><TiMessages /></button><span> {messages}</span>
+                                <button><SiMinutemailer /></button><span>{minutemailer}</span> 
                             </div>
                         </div>
                     ))

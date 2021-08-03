@@ -11,7 +11,7 @@ const MessageForm = ({AddMessegeActionCreator,profile}) => {
 
         <div className={style.Form}>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
+                <div className={style.messageInput} >
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
                     <input name="messege" ref={register} placeholder="write message"/>
                 </div>
