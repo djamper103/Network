@@ -31,5 +31,56 @@
 .Form{
     margin-bottom: 50px;
 }
+@media all and (max-width: 1600px) {
+    .container{
+        max-width: 1000px;
+    }
+    .people{
+        width: 200px;
+    }
+    .main{
+        margin-right: 50px;
+    }
+}
+@media all and (max-width: 1300px) {
+    .container{
+        max-width: 900px;
+    }
+    .people{
+        margin: 0px 50px 20px 0px;
+        width: 200px;
+    }
+    .main{
+        margin-right: 60px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .container{
+        max-width: 800px;
+    }
+    .people{
+        margin: 0px 50px 20px 62px;
+        width: 120px;
+    }
+    .main{
+        margin-right: 60px;
+    }
+}
+@media all and (max-width: 800px) {
+    .container{
+        max-width: 700px;
+        margin: 100px auto 50px;
+    }
+    .people{
+        margin: 0px 40px 20px 70px;
+        width: 90px;
+    }
+    .main{
+        margin-right: 60px;
+    }
+}
+
+
+
 
 

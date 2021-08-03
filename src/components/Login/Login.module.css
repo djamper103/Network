@@ -7,7 +7,6 @@
    max-width: 1200px;
    max-height: 800px;
    margin: 80px auto;
-   box-shadow: 0 0 15px rgba(135, 132, 132, 0.5);
 }
 .mainContent{
     grid-area: mainContent;
@@ -22,6 +21,7 @@
     background-color: white;
     width: 600px;
     height: 600px;
+    box-shadow: 0 0 15px rgba(135, 132, 132, 0.5);
 }
 .login h3{
     font-size: 32px;
@@ -40,6 +40,7 @@
     font-size: 24px;
     color: white;
     background-color: black;
+    box-shadow: 0 0 15px rgba(135, 132, 132, 0.5);
 }
 .aboutUs p{
     display: flex;
