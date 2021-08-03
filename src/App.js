@@ -53,7 +53,7 @@ class App extends React.Component {
                 <div className='Content'>
                     <HeaderContainer/>
                      <div className='Maincontent'>
-                        {/* <SidebarContainer/> */}
+                        <SidebarContainer/>
                         <Route exact path='/Profile/:userId?' render={() => <ProfileContainer/>}/>
                         <Route exact path='/ProfileDataForm' render={() => <ProfileDataForm/>}/>
                         <Route exact path='/Messeges' render={() => <MessegesContainer/>}/>

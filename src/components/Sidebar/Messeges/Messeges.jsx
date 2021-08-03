@@ -16,16 +16,16 @@ const Messeges = ({DialogsPeople, DialogsPage, profile}) => {
 
 
     return (
-        <div className={style.messeges}>
-
+        <div className={style.container}>
             <div className={style.people}>
                 {Statement}
             </div>
-            <div className={style.FormInfo}>
-                <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
-                <MessageFormContainer/>
+            <div className={style.main}>
+                <div className={style.formInfo}>
+                    <MessageFormContainer profile={profile}/>
+                </div>
+                <div className={style.Form}>{Statement1}</div>
             </div>
-            <div className={style.Form}>{Statement1}</div>
         </div>
     )
 }

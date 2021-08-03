@@ -1,54 +1,35 @@
-
+.container{
+    display: grid;
+    grid-template-areas:
+    'people main';
+    grid-template-columns: 0.2fr auto;
+    margin: 50px auto;
+    max-width: 1200px;
+}
 .people{
+    grid-area: people;
+    margin: 0px 50px 20px 0px;
     background-color: white;
-    position: relative;
     width: 300px;
-    height: 800px;
-    left: 420px;
-    top: 20px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+    box-shadow: 0 0 8px rgb(135 132 132 / 50%);
 }
-
-
-.FormInfo{
+.main{
+    grid-area: main;
+}
+.formInfo{
     background-color: white;
-    width: 700px;
-    height: 200px;
-    border-radius: 15px;
-    position: relative;
-    left: 740px;
-    top: -780px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+    box-shadow: 0 0 8px rgb(135 132 132 / 50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.FormInfo img{
-    width: 70px;
-    height: 70px;
+.formInfo img{
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
-    position: relative;
-    left: 70px;
-    top:57px;
-
 }
-.people a:hover {
-
-    color: rgba(224, 11, 11, 0.9);
-
-
+.Form{
+    margin-bottom: 50px;
 }
-.people a {
-
-    display: inline-block;
-    font-size: 20px;
-    color:black;
-    margin-right: 10px;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: -20px;
-    left: 20px;
-
-}
-
 
 

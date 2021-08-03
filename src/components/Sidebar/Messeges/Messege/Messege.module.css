@@ -1,4 +1,11 @@
-
+.Form {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(135 132 132 / 50%);
+    border-radius: 20px;
+}
 .Form img{
     width: 80px;
     height: 80px;
@@ -8,37 +15,18 @@
     left: 10px;
 
 }
-.Form {
-    background-color: white;
-    /*#4f6294;*/
-    width: 700px;
-
-    border-radius: 15px;
-    color: black;
-    font-weight: 200;
-    font-size: 22px;
-    position: relative;
-    top: -730px;
-    left: 740px;
-    margin-bottom: 30px;
-
-
-}
-.MessagesTime{
-    position: relative;
-    top: -80px;
-    left: 100px;
-    opacity: 0;
+.messagesTime{
+    font-size: 16px;
 }
 .Form span{
     position: relative;
-    top: -45px;
-    left: 20px;
+    top: -65px;
+    left: 110px;
+    font-size: 24px;
 }
 .messege{
     position: relative;
-    top: 20px;
-    left: 10px;
-    word-wrap: break-word;
-    width: 580px;
+    left: 2%;
+    font-size: 24px;
+    margin-bottom: 20px;
 }

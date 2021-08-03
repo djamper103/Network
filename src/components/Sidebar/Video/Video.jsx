@@ -51,14 +51,9 @@ const Video = ({}) => {
             <div className={style.mainContent}>
                 {
                     state.map(item=>(
-                        <div className={style.Video}>
+                        <div className={style.Video} key={item.id} >
                             <div className={style.videoMain}>
-                            <video
-                        width="300"
-                        height="300"
-                        controls
-                        preload="auto"
-                    >
+                                <video width="300" height="300" controls preload="auto">
                                     <source src={item.url} type="video/webm"/>
                                 </video>
                             </div>
@@ -70,7 +65,6 @@ const Video = ({}) => {
                         </div>
                     ))
                 }
-
             </div>
         </div>
     )

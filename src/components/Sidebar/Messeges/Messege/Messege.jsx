@@ -10,11 +10,10 @@ const Messege = ({id,messege,profile,name,image}) => {
 
             <div className={style.Form}>
                 <img src={image!= null ? image : profile.photos.small?profile.photos.small:userPhoto}/>
-                <span>{name}</span>
-                <div className={style.messege}>{messege}</div>
-                <div className={style.MessagesTime}>
+                <span>{name}  <div className={style.messagesTime}>
                     {messages} min ago
-                </div>
+                </div></span>
+                <div className={style.messege}>{messege}</div>
             </div>
 
 
