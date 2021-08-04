@@ -201,3 +201,13 @@ color: black;
         font-size: 32px;
     }
 }
+@media all and (max-width: 300px) {
+    .Header{
+        grid-template-columns: 1.5fr 2fr 2fr;
+    }
+    .Header a{
+        font-size: 19px;
+    }
+    
+}
+

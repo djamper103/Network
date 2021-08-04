@@ -118,8 +118,8 @@
 }
 @media all and (max-width: 1000px) {
     .Container{
-        margin: 50px auto;
-        max-width: 680px;
+        margin: 50px 0% 50px 10%;
+        max-width: 800px;
     }
     .Video{
         margin: 0px 20px 20px;
@@ -150,8 +150,9 @@
 }
 }
 @media all and (max-width: 800px) {
+   
     .Container{
-        margin: 100px 100px 50px 150px;
+        margin: 100px 0% 50px 12.5%;
         max-width: 650px;
     }
     .Video{
@@ -177,58 +178,81 @@
 .Post button{
     font-size: 19px;
 }
-.Header h3::before {
-    width: 340px;
+.Header{
+    margin-bottom: 50px;
 }
+.Header h3::before {
+    width: 100%;
+    left: -5%;
+}
+
 .Search {
     display: flex;
     flex-direction: column;
+    position: static;
+    margin-top: 25px;
 }
 .Search ::before {
-    width:340px;
-    top: 180%;
-    left: 0%;
+    display: none;
 }
 .Search input{
     width: 200px;
     height: 28px;
-    margin: 0 auto 0 28%;
+    margin: 0 auto;
 }
 
 .Search button{
-    margin: 10px auto 0 38%;
+    margin: 3%  auto 0;
     position: static;
 }
 }
-@media all and (max-width: 700px) {
-    .Search input{
-        margin: 0 auto 0 20%;
-    }
-    
-    .Search button{
-        margin: 10px auto 0 33%;
-    }
-
-}
 @media all and (max-width: 600px) {
+    .Container{
+        margin: 100px 0% 50px 15%;
+        max-width: 550px;
+    }
     .Search input{
         width: 170px;
-    height: 28px;
-        margin: 0 auto 0 15%;
+        height: 28px;
+    }
+    .Header{
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 450px) {
+    .Container{
+        margin: 100px 0% 50px 21%;
+        max-width: 300px;
+    }
+}
+@media all and (max-width: 350px) {
+    .Container{
+        margin: 100px 0% 50px 22%;
+        max-width: 250px;
+    }
+}
+@media all and (max-width: 300px) {
+    .Container{
+        margin: 100px 0% 50px 25%;
+        max-width: 200px;
+    }
+    .Header h3{
+        position: static;
+        margin: 20px auto 0;
+    }
+    .Post {
+        left: 30px;
+        }
+    .Post span{
+        font-size: 12px;
+    }
+    .Post button{
+        font-size: 16px;
     }
     
-    .Search button{
-        margin: 10px auto 0 ;
-    }
-
-.Header h3::before {
-    width: 240px;
-}
-.Search ::before {
-    width:220px;
 }
 
-}
+
 
 
 
