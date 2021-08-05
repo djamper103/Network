@@ -1,70 +1,7 @@
-.Post{
-    background-color:white;
-    width: 951px;
-    color: black;
-    position: relative;
-    left:-11px;
-    top: -25px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
-
-
-}
-.Photo img{
-    position: relative;
-    left:40px;
-    top: 25px;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-
-}
-.Name{
-    position: relative;
-    left:130px;
-    top: -46px;
-    font-size: 20px;
-}
-.Photo p{
-    position: relative;
-    left:130px;
-    top: -50px;
-}
 .post{
-    position: relative;
-    left:50px;
-    top: -20px;
-    font-size: 20px;
-    width: 880px;
-    word-wrap: break-word;
+    width: 200px;
 }
-.Like{
-    position: relative;
-    left:60px;
-    top: 30px;
-    font-size: 20px;
+.post img{
+    width: 200px;
+    height: 200px;
 }
-
-.Messages{
-    position: relative;
-    left:255px;
-    top: 5px;
-    font-size: 20px;
-}
-.Minutemailer{
-    position: relative;
-    left:320px;
-    top: -22.5px;
-    font-size: 20px;
-}
-.image img{
-    position: relative;
-    top:-20px;
-    left: 60px;
-    width: 830px;
-    height: 400px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-}
-
-

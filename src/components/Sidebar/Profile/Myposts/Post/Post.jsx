@@ -10,7 +10,7 @@ const Post = ({name, post, profile,image}) => {
 
     return (
         <div>
-            <div className={style.Post}>
+            <div className={style.post}>
 
                 <div className={style.Photo}>
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>

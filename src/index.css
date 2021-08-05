@@ -1,7 +1,13 @@
 
 *{
   transition: 0.2s;
-  
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #bf1650;
 }
 
 body {

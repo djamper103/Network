@@ -1,171 +1,129 @@
-*{
-    transition: 0.5s;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+.profileInfo {
+    display: grid;
+    grid-template: "header" "upMenu" "upContent" "mainContent";
+    grid-template-rows: auto;
 }
 
-
-.ProfileInfo a:hover{
-    color: #f10404;
+.profileInfo a {
+    letter-spacing: 2px;
+    text-indent: 2.5em;
+    color: black;
+    text-decoration: none;
 }
-.Profile img {
+
+.header {
+    grid-area: header;
+    height: 300px;
+}
+
+.header img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.upMenu {
+    grid-area: upMenu;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(135 132 132 / 50%);
+}
+
+.upMenu a {
+    position: relative;
+    left: 6%;
+    font-size: 24px;
+    top: 3px;
+}
+
+.upContent {
+    grid-area: upContent;
+    display: grid;
+    grid-template: "upImage upMain";
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.upImage {
+    grid-area: upImage;
+    text-align: center;
+    background-color: white;
+    margin-top: -170px;
+}
+
+.upImage img {
     width: 200px;
     height: 184px;
-    position: relative;
-    z-index: 0;
-    background: white;
-    left:470px;
-    top:-1626px;
+}
 
+.status {
+    margin-top: 11px;
+}
 
+.status input {
+    width: 100px;
+    border-radius: 10px;
 }
-.Status{
-    position: relative;
-    left:558px;
-    top:-1630px;
 
-}
-.Status input{
-    position: relative;
-    left:-65px;
-    top:-2px;
-    background-color: #efefef;
-    text-align: center;
-    width: 150px;
-    border-radius: 40px;
-    border: 0;
-}
-.Profile{
-    color: white;
-}
-.Profile li{
-    list-style-type: none;
-    margin-top: 10px;
-}
-.Tent img{
-    width: 1860px;
-    height: 260px;
-    position: relative;
-    z-index: 0;
-    top:-15px
-
-
-}
-.WhiteLine1{
-    top:-18px;
-    position: relative;
-    z-index: 0;
-    width: 1860px;
+.upMain {
+    grid-area: upMain;
     height: 50px;
-    background: white;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+    background-color: white;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 109%;
 }
-.WhiteLine1 a{
-    color: black;
-    text-decoration: none;
+
+.upMain a {
     display: inline-block;
-    letter-spacing: 2px;
-    text-indent: 4em;
-    font-size: 18px;
     position: relative;
-    top:12px;
-    left:780px;
-
+    top: -32%;
 }
 
-.WhiteSquare{
+.addPhoto {
     position: relative;
-    z-index: 0;
-    width: 220px;
-    height: 220px;
-    background: white;
-    left:460px;
-    top:-150px;
-}
-.WhiteLine2{
-    position: relative;
-    z-index: 0;
-    width: 730px;
-    height: 70px;
-    background: white;
-    left:680px;
-    top:-220px;
-}
-.WhiteLine2 a{
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    letter-spacing: 2px;
-    text-indent: 2em;
-    font-size: 18px;
-    position: relative;
-    left:100px;
-    top: -5px;
-}
-.WhiteLine2 input{
-
-    position: relative;
-    top:25px;
-    left:12px;
-    opacity: 0%;
-}
-.WhiteLine3{
-    position: relative;
-    width: 680px;
-    height: 550px;
-    background: white;
-    left:730px;
-    top:-200px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
-}
-.WhiteLine4{
-    position: relative;
-    width: 240px;
-    height: 550px;
-    background: white;
-    left:460px;
-    top:-766px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
-}
-.WhiteLine5{
-    position: relative;
-    width: 950px;
-    height: 80px;
-    background: white;
-    left:460px;
-    top:-746px;
-    box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
+    top: 23%;
+    left: 2%;
 }
 
+.upMain span {
+    opacity: 0;
+    position: relative;
+    top: -38%;
+    left: 2.5%;
+}
 
-.WhiteLine4   a{
-    color: #000000;
-    text-decoration: none;
-    list-style: none;
+.mainContent {
+    grid-area: mainContent;
+    display: grid;
+    grid-template: "upMainContent" "middleMainContent";
+    grid-row: auto;
+}
+
+.upMainContent {
+    grid-area: upMainContent;
+    margin: 15px 0;
     display: flex;
-    font-size: 16px;
+}
+.upMainContent li{
+    list-style: none;
     margin-bottom: 25px;
-    top:30px;
-    position: relative;
-
 }
-/*.WhiteLine4 a:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    bottom: -5px;*/
-/*    left: 0;*/
-/*    width: 180px;*/
-/*    height: 1px;*/
-/*    background: #e3e2e2;*/
-/*}*/
-.WhiteLine4 li {
-    list-style-type: none;
+.upMainContent ul{
+    padding: 30px;
 }
-
-.AddPhoto{
-    position: relative;
-    left:-90px;
-    top: 30px;
-
+.upMainContentUl{
+    background-color: white;
+    margin: 0  20px 0 249px;
+}
+.UpMainContentForm{
+    background-color: white;
+    width: 607px;
+}
+.middleMainContent {
+    grid-area: middleMainContent;
+    margin: 0 auto;
+    
 }
