@@ -37,6 +37,18 @@
     font-size: 24px;
     top: 3px;
 }
+.upMenu button{
+    position: relative;
+    left: 155%;
+    font-size: 22px;
+    top: 5px;
+    height: 30px;
+    width: 130px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(219,26,26,.87);
+}
+
 
 .upContent {
     grid-area: upContent;
@@ -73,7 +85,7 @@
     background-color: white;
     margin-top: 15px;
     font-size: 20px;
-    width: 109%;
+    width: 108%;
 }
 
 .upMain a {
@@ -104,26 +116,28 @@
 
 .upMainContent {
     grid-area: upMainContent;
-    margin: 15px 0;
+    margin: 20px auto;
     display: flex;
+    max-width: 959px;
 }
 .upMainContent li{
     list-style: none;
     margin-bottom: 25px;
 }
 .upMainContent ul{
-    padding: 30px;
+    padding: 10px 0 0 20px;
+    font-size: 17px;
 }
 .upMainContentUl{
     background-color: white;
-    margin: 0  20px 0 249px;
+    margin: 0 20px 0 53px;
 }
 .UpMainContentForm{
     background-color: white;
-    width: 607px;
+    width: 650px;
 }
 .middleMainContent {
     grid-area: middleMainContent;
     margin: 0 auto;
-    
+    max-width: 959px;
 }

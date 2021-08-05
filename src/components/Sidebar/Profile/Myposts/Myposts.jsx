@@ -17,7 +17,7 @@ const Myposts = ({Profile,profile}) => {
                 <PostFormContainer/>
             </div>
 
-            <div className={style.FormInfo}>
+            <div className={style.formInfo}>
                 {Statement}
             </div>
         </div>

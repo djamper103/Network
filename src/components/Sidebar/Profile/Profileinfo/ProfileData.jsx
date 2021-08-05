@@ -5,12 +5,11 @@ const ProfileData=({profile,status,isOwner,editMode})=>{
 
     return(
 
-        <div className={style.ProfileData}>
-            {isOwner&& <div><button onClick={editMode}>Edit Profile</button></div>}
+        <div className={style.profileData}>
             <h3>{profile.fullName ? profile.fullName :"I don't have a name only Id" }</h3>
             <ul>
-                <li>{'Name:   '}{profile.fullName ? profile.fullName :"I don't have a name only Id" }</li>
-                <li>{'userId:   '}{profile.userId}</li>
+                <li>{'My name:   '}{profile.fullName ? profile.fullName :"I don't have a name only Id" }</li>
+                <li>{'userId:   '}{profile.userId? profile.userId :"I don't have even Id"}</li>
                 <li> {'Job:   '}{profile.lookingForAJob ? profile.lookingForAJobDescription:"No i'm not looking for a job"}</li>
                 <li>{'About me :   '}{profile.aboutMe ? profile.aboutMe: "I'm not, you were wrong" }</li>
                 <li>{'github:   '}{profile.contacts.github ? profile.contacts.github: "github.com..." }</li>
@@ -21,8 +20,6 @@ const ProfileData=({profile,status,isOwner,editMode})=>{
                 <li>{'website:   '}{profile.contacts.website ? profile.contacts.website: "website.com..." }</li>
                 <li>{'youtube:   '}{profile.contacts.youtube ? profile.contacts.youtube: "youtube.com..." }</li>
                 <li>{'mainLink:   '}{profile.contacts.mainLink ? profile.contacts.mainLink: "mainLink.com..." }</li>
-
-
             </ul>
         </div>
     )

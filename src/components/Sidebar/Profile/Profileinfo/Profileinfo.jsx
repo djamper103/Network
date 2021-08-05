@@ -39,10 +39,10 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                 <img src={Tent} />
             </div>
             <div className={style.upMenu}>
-                <NavLink to='/Home'>Home</NavLink>
+                <NavLink to='/Network'>Home</NavLink>
                 <NavLink to='/Messeges'>Message</NavLink>
                 <NavLink to='/News'>News</NavLink>
-
+                {isOwner? <div><button onClick={()=>setEditMode(true) }>Edit Profile</button></div>:''}
             </div>
             <div className={style.upContent}>
                 <div className={style.upImage}>
@@ -76,10 +76,7 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                     <div className={style.UpMainContentForm}>
                         {editMode ?
                             <ProfileDataForm onSubmitData={onSubmitData} profile={profile} />
-                            : <ProfileData profile={profile} status={status} isOwner={isOwner}
-                                editMode={() => { setEditMode(true) }
-                                }
-                            />
+                            : <ProfileData profile={profile} status={status}/>
                         }
                     </div>
                 </div>

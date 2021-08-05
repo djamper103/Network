@@ -24,72 +24,55 @@ const ProfileDataForm = ({onSubmitData,profile}) => {
 
         const onSubmit = (data) =>onSubmitData(data)
 
-
         const {register, handleSubmit, errors,} = useForm(
             {
                 resolver: yupResolver(schema),
             }
         );
 
-
         return (
-
-
-
-            <div className={style.Form}>
+            <div className={style.form}>
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <input name={'userId'} ref={register} placeholder="write your id"/>
                     User Id
                     <p>{errors.userId?.message}</p>
 
-
-
-                    <input name="lookingForAJobDescription" ref={register} placeholder="looking For A Job Description"/>
+                    <input name="lookingForAJobDescription" ref={register} placeholder="looking for a job description"/>
                     Looking for a job description
                     <p>{errors.lookingForAJobDescription?.message}</p>
-
-
 
                     <input name="fullName" ref={register} placeholder="write your full name"/>
                     Full Name
                     <p>{errors.fullName?.message}</p>
 
-
                     <input name={'contacts.github'} ref={register} placeholder="github"/>
                     Github
                     <p>{errors.github?.message}</p>
-
 
                     <input name="contacts.vk" ref={register} placeholder="vk.com"/>
                     Vkontakte
                     <p>{errors.vk?.message}</p>
 
-
                     <input name="contacts.facebook" ref={register} placeholder="facebook"/>
                     Facebook
                     <p>{errors.facebook?.message}</p>
-
 
                     <input name="contacts.instagram" ref={register} placeholder="instagram"/>
                     Instagram
                     <p>{errors.instagram?.message}</p>
 
-
                     <input name="contacts.twitter" ref={register} placeholder="twitter"/>
                     Twitter
                     <p>{errors.twitter?.message}</p>
-
 
                     <input name="contacts.website" ref={register} placeholder="website"/>
                     Website
                     <p>{errors.website?.message}</p>
 
-
                     <input name="contacts.youtube" ref={register} placeholder="youtube"/>
                     Youtube
                     <p>{errors.youtube?.message}</p>
-
 
                     <input name="contacts.mainLink" ref={register} placeholder="mainLink"/>
                     Main link
@@ -100,15 +83,9 @@ const ProfileDataForm = ({onSubmitData,profile}) => {
                     <p>{errors.lookingForAJob?.message}</p>
 
                     <button type="submit">Save</button>
-
-
-
                 </form>
             </div>
-
         )
-
-
     }
 
 

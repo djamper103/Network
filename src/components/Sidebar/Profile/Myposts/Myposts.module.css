@@ -1,0 +1,10 @@
+
+.newpost{
+display: flex;
+background-color: white;
+}
+.newpost img{
+    width: 80px;
+    height: 80px;
+}
+
