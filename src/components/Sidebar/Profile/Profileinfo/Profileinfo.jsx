@@ -52,7 +52,7 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                     </div>
                 </div>
                 <div className={style.upMain}>
-                    <div className={style.addPhoto}> < MdPhotoCamera /> Add photo</div>
+                    <div className={style.addPhoto}> <MdPhotoCamera /> Add photo</div>
                     <span>
                         {isOwner && <input type={"file"} onChange={onMainPhotoSelected} />}
                     </span>

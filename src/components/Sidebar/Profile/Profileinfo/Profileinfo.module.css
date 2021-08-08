@@ -25,7 +25,7 @@
 .upMenu {
     grid-area: upMenu;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     height: 40px;
     background-color: white;
     box-shadow: 0 0 8px rgb(135 132 132 / 50%);
@@ -33,13 +33,11 @@
 
 .upMenu a {
     position: relative;
-    left: 6%;
     font-size: 24px;
     top: 3px;
 }
 .upMenu button{
     position: relative;
-    left: 155%;
     font-size: 22px;
     top: 5px;
     height: 30px;
@@ -47,19 +45,18 @@
     border-radius: 50px;
     color: #fff;
     background-color: rgba(219,26,26,.87);
+    left: 175px;
 }
 
 
 .upContent {
     grid-area: upContent;
-    display: grid;
-    grid-template: "upImage upMain";
-    grid-template-columns: auto;
-    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 906px;;
 }
 
 .upImage {
-    grid-area: upImage;
     text-align: center;
     background-color: white;
     margin-top: -170px;
@@ -77,15 +74,17 @@
 .status input {
     width: 100px;
     border-radius: 10px;
+    background-color: #efefef;
+    text-align: center;
+    font-size: 15px;
 }
 
 .upMain {
-    grid-area: upMain;
     height: 50px;
     background-color: white;
     margin-top: 15px;
     font-size: 20px;
-    width: 108%;
+    width: 100%;
 }
 
 .upMain a {
@@ -97,7 +96,6 @@
 .addPhoto {
     position: relative;
     top: 23%;
-    left: 2%;
 }
 
 .upMain span {
@@ -106,38 +104,60 @@
     top: -38%;
     left: 2.5%;
 }
-
 .mainContent {
     grid-area: mainContent;
     display: grid;
     grid-template: "upMainContent" "middleMainContent";
     grid-row: auto;
+    margin-bottom: 50px;
 }
 
 .upMainContent {
     grid-area: upMainContent;
-    margin: 20px auto;
     display: flex;
-    max-width: 959px;
+    justify-content: center; 
+    margin: 20px auto;
+    width: 906px;
 }
 .upMainContent li{
     list-style: none;
     margin-bottom: 25px;
 }
 .upMainContent ul{
-    padding: 10px 0 0 20px;
     font-size: 17px;
 }
 .upMainContentUl{
-    background-color: white;
-    margin: 0 20px 0 53px;
+    background-color: white; 
+    width: 300px;
+    margin-right: 20px;
 }
 .UpMainContentForm{
     background-color: white;
-    width: 650px;
+    width: 586px;
 }
 .middleMainContent {
     grid-area: middleMainContent;
-    margin: 0 auto;
-    max-width: 959px;
+    display: flex;
+    justify-content: center;   
+}
+@media all and (max-width: 1000px) {
+    .upMainContent {
+        width: 740px;
+    }
+    .upContent {
+        width: 740px;
+    }
+    .upMain input{
+        width: 100px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1.5em;
+left: 70px;
+    }
+    .upMenu button{
+
+        left: 125px;
+    }
+    
 }

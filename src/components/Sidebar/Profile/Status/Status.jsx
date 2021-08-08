@@ -40,7 +40,7 @@ ActivateEditMode=()=> {
 
     render() {
         return(
-            <div>
+            <div className={style.status}>
                 {
                     !this.state.editMode &&
                     <div><span onClick={this.ActivateEditMode}>{this.props.status}</span></div>

@@ -7,7 +7,6 @@ import React from "react";
 const Profile = ({profile,status,UpdateThunk,savePhoto,isOwner,saveProfileDataThunk}) => {
     return (
         <div className={style.maincontent}>
-
             <Profileinfo savePhoto={savePhoto}
                          isOwner={isOwner}
                 profile={profile} status={status} UpdateThunk={UpdateThunk}

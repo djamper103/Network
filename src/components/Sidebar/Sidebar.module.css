@@ -64,3 +64,10 @@
 
 
 }
+
+
+@media all and (max-width: 850px) {
+  .sidebar {
+display: none;
+  }
+}

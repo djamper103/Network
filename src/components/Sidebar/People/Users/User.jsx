@@ -9,13 +9,13 @@ let User = ({user, followingProgress, FollowSuccess, UnFollowSuccess,}) => {
 
     return (
 
-        <div className={style.User}>
+        <div className={style.users}>
 
-          <span className={style.User}>
+          <div className={style.user}>
               <NavLink to={'/Profile/' + user.id}>
-              <div><img src={user.photos.small != null ? user.photos.small : userPhoto}/></div>
+              <img src={user.photos.small != null ? user.photos.small : userPhoto}/>
               </NavLink>
-              <div>
+              <div className={style.followed}>
                   {user.followed
                       ? <button disabled={followingProgress.some(id => id === user.id)} onClick={() =>
                           FollowSuccess(user.id)
@@ -27,17 +27,11 @@ let User = ({user, followingProgress, FollowSuccess, UnFollowSuccess,}) => {
                       }>Foloowed</button>}
               </div>
 
-          </span>
-            <span>
-                  <span>
-                      <div>Name: {user.name}</div>
-
-                  </span>
-                  <span>
-
-                      <div>{user.status ? `Status: ${user.status}` : `Status: no status`}</div>
-                  </span>
-              </span>
+        </div>
+            <div className={style.info}>
+                <div>Name: {user.name}</div>
+                <div>{user.status ? `Status: ${user.status}` : `Status: no status`}</div>
+            </div>
         </div>
 
 

@@ -98,7 +98,7 @@ color: black;
         font-size: 30px;
     }
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: 850px) {
     .menu{
         display:block;
     }

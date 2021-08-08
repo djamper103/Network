@@ -7,10 +7,9 @@ const PostForm = ({AddPostActionCreator,}) => {
     const {register, handleSubmit} = useForm();
     const onSubmit = (data) => AddPostActionCreator(data)
 
-
     return (
 
-        <div className={style.Form}>
+        <div className={style.form}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input name="post" ref={register} placeholder="Say something" />
                 <button type="submit">Share</button>
