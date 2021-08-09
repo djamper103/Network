@@ -8,7 +8,7 @@
 }
 .people{
     grid-area: people;
-    margin: 0px 50px 20px 0px;
+    margin: 0px 50px 20px 20px;
     background-color: white;
     width: 240px;
     box-shadow: 0 0 8px rgb(135 132 132 / 50%);
@@ -24,15 +24,15 @@
     flex-direction: column;
 }
 .formInfo img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
 }
-.Form{
+.form{
     margin-bottom: 50px;
 }
 @media all and (max-width: 1600px) {
-    .container{
+    .main{
         max-width: 1000px;
     }
     .people{
@@ -43,54 +43,43 @@
     }
 }
 @media all and (max-width: 1300px) {
-    .container{
-        max-width: 900px;
-    }
+
     .people{
-        margin: 0px 50px 20px 20px;
+        margin: 0px 50px 20px 70px;
         width: 200px;
     }
-    .main{
-        margin-right: 60px;
-    }
+
 }
 @media all and (max-width: 1000px) {
-    .container{
-        max-width: 800px;
-    }
-    .people{
-        margin: 0px 30px 20px 62px;
-        width: 150px;
-    }
-    .main{
-        margin-right: 60px;
-    }
-}
-@media all and (max-width: 800px) {
-    .container{
-        max-width: 800px;
-        margin: 100px auto 40px;
-    }
+ 
     .people{
         margin: 0px 20px 20px 70px;
-        width: 110px;
+        width: 130px;
+    }
+}
+@media all and (max-width: 850px) {
+    .container{
+        margin: 10px auto;
     }
     .main{
-        margin-right: 10px;
+        margin: 100px auto;
+        margin-right: 20px;
     }
+    .people{
+        margin: 100px 20px 20px 20px;
+        width: 120px;
+    }
+
 
 }
 @media all and (max-width: 600px) {
     .people{
-        margin: 0px 20px 20px 70px;
         width: 100px;
+        margin: 100px 20px 20px 20px;
     }
-    .main{
-        margin-right: 10px;
-    }
+
 
 }
-
 
 
 

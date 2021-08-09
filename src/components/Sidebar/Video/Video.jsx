@@ -39,10 +39,10 @@ const Video = ({}) => {
     ]     
     )
     return (
-        <div className={style.Container}>
-            <div className={style.Header}>
+        <div className={style.container}>
+            <div className={style.header}>
                 <h3>All Videos</h3>
-                <div className={style.Search}>
+                <div className={style.search}>
                     <input placeholder="Search Media..."  />
                     <button>Search</button>
                 </div>
@@ -51,13 +51,13 @@ const Video = ({}) => {
             <div className={style.mainContent}>
                 {
                     state.map(item=>(
-                        <div className={style.Video} key={item.id} >
+                        <div className={style.video} key={item.id} >
                             <div className={style.videoMain}>
                                 <video controls preload="auto">
                                     <source src={item.url} type="video/webm"/>
                                 </video>
                             </div>
-                            <div className={style.Post}>
+                            <div className={style.post}>
                                 <button><BiLike /></button><span>{like} people like this</span>
                                 <button><TiMessages /></button><span> {messages}</span>
                                 <button><SiMinutemailer /></button><span>{minutemailer}</span> 

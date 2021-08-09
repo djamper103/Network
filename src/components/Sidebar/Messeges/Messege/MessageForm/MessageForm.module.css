@@ -1,51 +1,53 @@
-.Form{
+.form{
     margin: 0 auto;
 }
-.Form input{
+.form input{
     border-radius: 15px;
     line-height: 40px;
     width: 400px;
     height:50px;
     text-align: center;
     background-color:  #efefef;
+    font-size: 25px;
 }
-.Form img{
+.form img{
     position: relative;
-    top: 34px;
+    top: 40px;
     right: 3%;
 }
 
-.Form button{
+.form button{
     width: 200px;
     height: 40px;
     background-color: #4f6294;
     border-radius: 50px;
     color: white;
     background-color: rgba(219, 26, 26, 0.87);
-    font-size: 16px;
+    font-size: 18px;
     margin: 5% 38%;
 }
-.Form button:hover {
+.form button:hover {
     opacity: 1;
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(87, 11, 11, 0.2);
 }
 @media all and (max-width: 1000px) {
-    .Form input{
-        max-width: 300px;
+    .form input{
+        max-width: 280px;
+        font-size: 22px;
     }
-    .Form button{
-        width: 180px;
+    .form button{
+        width: 200px;
+        font-size: 18px;
     }
 }
 @media all and (max-width: 700px) {
-    .Form input{
-        max-width: 200px;
+    .form input{
+        max-width: 280px;
         margin: 0 auto;
     }
-    .Form button{
-        width: 140px;
-        font-size: 14px;
+    .form button{
+        width: 180px;
         margin: 10% 20%;
     }
     .messageInput{
@@ -55,7 +57,7 @@
     .messageInput img{
         margin: 0 auto;
     }
-    .Form img{
+    .form img{
         position: static;
     }
     

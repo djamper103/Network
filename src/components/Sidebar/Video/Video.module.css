@@ -1,4 +1,4 @@
-.Container{
+.container{
     display: grid;
     grid-template-areas:
     'Header'
@@ -10,60 +10,41 @@
     max-width: 1200px;
     justify-content: center;
 }
-.Header{
+.header{
     grid-area: Header;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
 }
-.Header h3{
-   position: relative;
-   left:5%;
-   top: 10%;
+.header h3{
+    text-align: center;
+    font-size: 30px;
 }
-.Header h3::before {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 2px;
-    background: #e3e2e2;
-    top: 140%;
+
+.search{
+    display: flex;
+    justify-content: center;
 }
-.Search{
-    position: relative;
-    top:30px;
-    left: 5%;
-}
-.Search input{
+.search input{
     width: 280px;
-    height: 28px;
+    height: 34px;
     border-radius: 40px;
     text-align: left;
     justify-content: left;
-    font-size: 17px;
+    font-size: 24px;
 }
 
-.Search button{
-    position: relative;
-    top: 0px;
-    left: -124px;
-    height: 26px;
-    width: 120px;
+.search button{
+    margin: 3px 0 0 20px;
+    height: 34px;
+    width: 160px;
     border-radius: 50px;
     color: #fff;
     background-color: rgba(217,52,52,.87);
     justify-content: center;
-    font-size: 17px;
+    font-size: 24px;
 }
-.Search ::before {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 2px;
-    background: #e3e2e2;
-    top: 180%;
-    left: -136%;
-}
+
 
 .mainContent{
     grid-area: maincontent;
@@ -71,7 +52,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.Video{
+.video{
     margin: 0 50px 50px;
 }
 .videoMain{
@@ -83,45 +64,39 @@
     height: 300px;
     object-fit: cover;
 }
-.Post {
+.post {
     margin-top: 5px;
  }
 
-.Post button:hover{
+.post button:hover{
     color:red;
  }
 
-.Post span{
+.post span{
     font-size: 18px; 
 }
-.Post button{
+.post button{
     font-size: 30px;
 }
 @media all and (max-width: 1400px) {
-    .Container{
+    .container{
         margin: 50px auto;
         max-width: 1000px;
     }
 }
 @media all and (max-width: 1200px) {
-    .Container{
-        margin: 50px auto;
+    .container{
         max-width: 800px;
     }
-    .Header h3::before {
-        width: 700px;
-    }
-    .Search ::before {
-        width: 700px;
-    }
+
     
 }
 @media all and (max-width: 1000px) {
-    .Container{
-        margin: 50px 0% 50px 10%;
+    .container{
+        margin: 50px 10% 50px 10%;
         max-width: 800px;
     }
-    .Video{
+    .video{
         margin: 0px 20px 20px;
     }
     .videoMain{
@@ -133,29 +108,24 @@
         height: 200px;
         object-fit: cover;
     }
-    .Post {
+    .post {
         margin-left: -10px;
     }
-.Post span{
+.post span{
     font-size: 14px;
 }
-.Post button{
+.post button{
     font-size: 19px;
 }
-.Header h3::before {
-    width: 600px;
+
 }
-.Search ::before {
-    width:600px;
-}
-}
-@media all and (max-width: 800px) {
+@media all and (max-width: 850px) {
    
-    .Container{
-        margin: 100px 0% 50px 12.5%;
+    .container{
+        margin: 130px auto;
         max-width: 650px;
     }
-    .Video{
+    .video{
         margin: 0px 20px 20px 0px;
     }
     .videoMain{
@@ -168,89 +138,51 @@
         height: 200px;
         object-fit: cover;
     }
-    .Post {
+    .post {
     position: relative;
     left: 21px;
     }
-.Post span{
+.post span{
     font-size: 14px;
 }
-.Post button{
+.post button{
     font-size: 19px;
 }
-.Header{
+.header{
     margin-bottom: 50px;
 }
-.Header h3::before {
-    width: 100%;
-    left: -5%;
-}
 
-.Search {
-    display: flex;
+.search {
     flex-direction: column;
-    position: static;
     margin-top: 25px;
 }
-.Search ::before {
-    display: none;
-}
-.Search input{
+
+.search input{
     width: 200px;
     height: 28px;
-    margin: 0 auto;
+    margin: 0 auto 5px;
 }
 
-.Search button{
+.search button{
     margin: 3%  auto 0;
-    position: static;
 }
 }
 @media all and (max-width: 600px) {
-    .Container{
-        margin: 100px 0% 50px 15%;
-        max-width: 550px;
+    .container{
+        width: 100%;
     }
-    .Search input{
-        width: 170px;
-        height: 28px;
+    .search input{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
     }
-    .Header{
-        margin-bottom: 20px;
+    .search button{
+        font-size: 20px;
     }
+
 }
-@media all and (max-width: 450px) {
-    .Container{
-        margin: 100px 0% 50px 21%;
-        max-width: 300px;
-    }
-}
-@media all and (max-width: 350px) {
-    .Container{
-        margin: 100px 0% 50px 22%;
-        max-width: 250px;
-    }
-}
-@media all and (max-width: 300px) {
-    .Container{
-        margin: 100px 0% 50px 25%;
-        max-width: 200px;
-    }
-    .Header h3{
-        position: static;
-        margin: 20px auto 0;
-    }
-    .Post {
-        left: 30px;
-        }
-    .Post span{
-        font-size: 12px;
-    }
-    .Post button{
-        font-size: 16px;
-    }
-    
-}
+
+
 
 
 

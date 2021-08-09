@@ -10,9 +10,9 @@ export default function AddNewNews ({name, post,image}) {
 
     return (
         <div>
-            <div className={style.Post}>
+            <div className={style.post}>
 
-                <div className={style.Photo}>
+                <div className={style.photo}>
                     <img src={image ? image: userPhoto}/>
                     <div className={style.Name}>{name}</div>
                     <p>20 min ago</p>

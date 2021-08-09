@@ -38,8 +38,8 @@ const ProfileDataForm = ({onSubmitData,profile}) => {
                     User Id
                     <p>{errors.userId?.message}</p>
 
-                    <input name="lookingForAJobDescription" ref={register} placeholder="looking for a job description"/>
-                    Looking for a job description
+                    <input name="lookingForAJobDescription" ref={register} placeholder="job description"/>
+                    job description
                     <p>{errors.lookingForAJobDescription?.message}</p>
 
                     <input name="fullName" ref={register} placeholder="write your full name"/>

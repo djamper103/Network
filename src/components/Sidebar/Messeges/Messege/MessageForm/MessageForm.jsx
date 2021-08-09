@@ -9,7 +9,7 @@ const MessageForm = ({AddMessegeActionCreator,profile}) => {
 
     return (
 
-        <div className={style.Form}>
+        <div className={style.form}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className={style.messageInput} >
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>

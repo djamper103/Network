@@ -3,7 +3,7 @@ import React from 'react';
 import Messege from './Messege/Messege'
 import People from './People/People'
 import MessageFormContainer from "./Messege/MessageForm/MessageFormContainer";
-import userPhoto from "../../../assets/images/default-avatar-profile-icon-male.jpg";
+
 
 
 const Messeges = ({DialogsPeople, DialogsPage, profile}) => {
@@ -24,7 +24,7 @@ const Messeges = ({DialogsPeople, DialogsPage, profile}) => {
                 <div className={style.formInfo}>
                     <MessageFormContainer profile={profile}/>
                 </div>
-                <div className={style.Form}>{Statement1}</div>
+                <div className={style.form}>{Statement1}</div>
             </div>
         </div>
     )

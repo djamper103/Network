@@ -15,21 +15,26 @@ const News = ({profile}) => {
 
 
     return (
-        <div>
-            <WhiteLine1 profile={profile}/>
-            <WhiteLine2/>
-            <WhiteLine3/>
-            <div className={style.newpost}>
-                <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
-                <PostFormContainer/>
+        <div className={style.container}>
+            <div className={style.leftSide}>
+                <WhiteLine1 profile={profile}/>
+                <WhiteLine2/>
+                <WhiteLine3/>
             </div>
-            <div>
-                <AddNewNewsContainer />
+            <div className={style.post}>
+                <div className={style.newpost}>
+                    <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
+                    <PostFormContainer/>
+                </div>
+                <div>
+                    <AddNewNewsContainer />
+                </div>
             </div>
-
-            <WhiteLine4/>
-            <WhiteLine5/>
-            <WhiteLine6/>
+            <div className={style.leftSide}>
+                <WhiteLine4/>
+                <WhiteLine5/>
+                <WhiteLine6/>
+            </div>
 
         </div>
     )

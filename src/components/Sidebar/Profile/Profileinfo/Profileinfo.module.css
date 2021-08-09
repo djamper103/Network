@@ -118,6 +118,7 @@
     justify-content: center; 
     margin: 20px auto;
     width: 906px;
+    
 }
 .upMainContent li{
     list-style: none;
@@ -130,6 +131,7 @@
     background-color: white; 
     width: 300px;
     margin-right: 20px;
+    
 }
 .UpMainContentForm{
     background-color: white;

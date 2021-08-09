@@ -1,4 +1,4 @@
-.Form {
+.form {
     display: flex;
     flex-direction: column;
     margin: 35px 0;
@@ -6,7 +6,7 @@
     box-shadow: 0 0 8px rgb(135 132 132 / 50%);
     border-radius: 20px;
 }
-.Form img{
+.form img{
     width: 80px;
     height: 80px;
     border-radius: 40px;
@@ -15,21 +15,23 @@
     left: 10px;
 
 }
-.messagesTime{
+.formUp{
+    display: flex;
+}
+.name{
     font-size: 16px;
+    margin: 10px 0 0 20px;
+    font-size: 20px;
 }
-.Form span{
-    position: relative;
-    top: -65px;
-    left: 110px;
-    font-size: 24px;
-}
+
 .messege{
-    position: relative;
-    left: 5%;
+    margin: 20px 0 0 25px;
     font-size: 24px;
     margin-bottom: 20px;
     width: 90%;
+}
+@media all and (max-width: 1000px) {
+
 }
 @media all and (max-width: 800px) {
     .messege{

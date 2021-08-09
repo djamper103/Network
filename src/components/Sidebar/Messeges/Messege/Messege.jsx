@@ -8,11 +8,16 @@ const Messege = ({id,messege,profile,name,image}) => {
     return (
         <div className={style.messeges}>
 
-            <div className={style.Form}>
-                <img src={image!= null ? image : profile.photos.small?profile.photos.small:userPhoto}/>
-                <span>{name}  <div className={style.messagesTime}>
-                    {messages} min ago
-                </div></span>
+            <div className={style.form}>
+                <div className={style.formUp}>
+                    <img src={image!= null ? image : profile.photos.small?profile.photos.small:userPhoto}/>
+                        <div className={style.name}>
+                            {name}
+                            <div className={style.messages}>
+                                {messages} min ago
+                            </div>
+                        </div>
+                </div>
                 <div className={style.messege}>{messege}</div>
             </div>
 
