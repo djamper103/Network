@@ -26,7 +26,7 @@ const News = ({profile}) => {
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
                     <PostFormContainer/>
                 </div>
-                <div>
+                <div className={style.newsMain}>
                     <AddNewNewsContainer />
                 </div>
             </div>

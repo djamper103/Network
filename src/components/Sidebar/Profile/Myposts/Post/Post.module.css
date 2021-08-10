@@ -29,6 +29,7 @@
     width: 830px;
     height: 400px;
     border-radius: 30px;
+    object-fit: cover;
 }
 .post{
     font-size: 20px;

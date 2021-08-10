@@ -10,28 +10,26 @@ import Fitnes from "../../../../assets/images/Fitnes.jpg";
 export  default  function WhiteLine2() {
 
     return(
-        <div className={style.WhiteLine2}>
+        <div className={style.container}>
             <h3>Page You May Like</h3>
-
             <ul>
-
                 <li><img src={Adventure}/><a href='#'><p>Travel the world </p></a>
-                    <div className={style.Adventure}>Adventure</div>
-                    <div className={style.BsHeart1}><a href='#'><BsHeart/></a></div>
+                    <div className={style.adventure}>Adventure
+                    <a href='#'><BsHeart/></a></div>
                 </li>
 
                 <li><img src={Food}/><a href='#'><p>Foodcort Nirala</p></a>
-                    <div className={style.Food}> Food</div>
-                    <div className={style.BsHeart2}><a href='#'><BsHeart/></a></div>
+                    <div className={style.food}> Food
+                    <a href='#'><BsHeart/></a></div>
                 </li>
 
                 <li><img src={Drama}/><a href='#'><p>Rolin Theitar</p></a>
-                    <div className={style.Drama}> Drama</div>
-                    <div className={style.BsHeart3}><a href='#'><BsHeart/></a></div></li>
+                    <div className={style.drama}> Drama
+                   <a href='#'><BsHeart/></a></div></li>
 
                 <li><img src={Fitnes}/><a href='#'><p>Active Mind</p></a>
-                    <div className={style.Fitnes}> Fitnes</div>
-                    <div className={style.BsHeart4}><a href='#'><BsHeart/></a></div></li>
+                    <div className={style.fitnes}> Fitnes
+                   <a href='#'><BsHeart/></a></div></li>
 
             </ul>
 

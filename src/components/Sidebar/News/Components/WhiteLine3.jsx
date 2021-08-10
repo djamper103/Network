@@ -12,7 +12,7 @@ export  default  function WhiteLine3() {
     const ago1 = Math.floor(Math.random() * 10);
     const ago2 = Math.floor(Math.random() * 10);
     return(
-        <div className={style.WhiteLine3}>
+        <div className={style.container}>
             <h3>Latest Top News </h3>
 
             <ul>

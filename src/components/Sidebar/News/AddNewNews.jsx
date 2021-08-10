@@ -10,20 +10,22 @@ export default function AddNewNews ({name, post,image}) {
 
     return (
         <div>
-            <div className={style.post}>
+            <div className={style.posts}>
 
                 <div className={style.photo}>
                     <img src={image ? image: userPhoto}/>
-                    <div className={style.Name}>{name}</div>
-                    <p>20 min ago</p>
+                    <div className={style.name}>{name}
+                    <p>20 min ago</p></div>
                 </div>
                 {
                     image?<div className={style.image}><img src={image}/></div>:null
                 }
                 <div className={style.post}>{post}</div>
-                <div className={style.Like}><a src='#'><BiLike/></a> {like} people like this</div>
-                <div className={style.Messages}><a src='#'><TiMessages/> {messages}</a></div>
-                <div className={style.Minutemailer}><a src='#'><SiMinutemailer/> {minutemailer}</a></div>
+                <div className={style.like}>
+                    <a src='#'><BiLike/></a> {like} people like this
+                    <a src='#'><TiMessages/> {messages}</a>
+                    <a src='#'><SiMinutemailer/> {minutemailer}</a>
+                </div>
             </div>
 
 
