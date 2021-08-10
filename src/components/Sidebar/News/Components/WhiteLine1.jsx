@@ -7,7 +7,7 @@ import userPhoto from "../../../../assets/images/default-avatar-profile-icon-mal
 export  default  function WhiteLine1({profile}) {
 
     return(
-        <div className={style.WhiteLine1}>
+        <div className={style.container}>
             <div className={style.background}><img src={background}/></div>
             <div className={style.photo}><img
                 src={profile.photos.small != null ? profile.photos.small : userPhoto}/></div>

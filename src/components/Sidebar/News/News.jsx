@@ -30,7 +30,7 @@ const News = ({profile}) => {
                     <AddNewNewsContainer />
                 </div>
             </div>
-            <div className={style.leftSide}>
+            <div className={style.rigthSide}>
                 <WhiteLine4/>
                 <WhiteLine5/>
                 <WhiteLine6/>

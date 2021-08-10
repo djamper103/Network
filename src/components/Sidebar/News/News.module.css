@@ -1,26 +1,28 @@
 .container{
-    display: grid;
-    grid-area: "leftSide" "post" "rigthSide";
-    grid-template-columns: 1fr 10fr 1fr;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 .leftSide{
-    grid-area: leftSide;
-    margin-right: 200px;
+    width: 200px;
 }
 .leftSide img{
     width: 100px;
     height: 100px;
 }
 .post{
-    grid-area: post;
+    width: 600px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .newpost img{
     width: 100px;
     height: 100px;
 }
 .rigthSide{
-    grid-area: rigthSide;
+    width: 200px;
 }
 .rigthSide img{
     width: 100px;
