@@ -15,25 +15,45 @@ export  default  function WhiteLine6() {
         <div className={style.container}>
             <h3>Friends Zone</h3>
             <ul>
-                <li><img src={Adventure}/> <div className={style.adventure}><a href='#'>Travel the world </a>
-                <p>Mutual</p></div>
-                    <button href='#'><BsHeart/></button>
+                <li>
+                    <div className={style.adventure}>
+                        <img src={Adventure}/>
+                        <span>
+                            <a href='#'>Travel the world</a>
+                            <p>{ago1} Mutual</p>
+                        </span>
+                        <button href='#'><BsHeart/></button>
+                    </div>
                 </li>
-
-                <li><img src={Food}/> <div className={style.food}><a href='#'>
-                    Foodcort Nirala</a> <p>Mutual</p></div>
-                    <button href='#'><BsHeart/></button>
+                <li>
+                    <div className={style.food}>
+                        <img src={Food}/>
+                        <span>
+                            <a href='#'>  Foodcort Nirala</a>
+                            <p>{ago2} Mutual</p>
+                        </span>
+                        <button href='#'><BsHeart/></button>
+                    </div>
                 </li>
-
-                <li><img src={Drama}/><div className={style.drama}><a href='#'>Rolin Theitar</a>
-                    <p>Mutual</p></div>
-                    <button href='#'><BsHeart/></button>
-                    
+                <li>
+                    <div className={style.drama}>
+                        <img src={Drama}/>
+                        <span>
+                            <a href='#'>Rolin Theitar</a>
+                            <p>{ago2+ago1} Mutual</p>
+                        </span>
+                        <button href='#'><BsHeart/></button>
+                    </div>
                 </li>
-                <li><img src={Fitnes}/><div className={style.fitnes}><a href='#'>Active Mind</a>
-                    <p>{ago1} Mutual</p></div>
-                    <button href='#'><BsHeart/></button>
-                    
+                <li>
+                    <div className={style.fitnes}>
+                        <img src={Fitnes}/>
+                        <span>
+                            <a href='#'>Active Mind</a>
+                            <p>{ago1} Mutual</p>
+                        </span>
+                        <button href='#'><BsHeart/></button>
+                    </div>
                 </li>
             </ul>
         </div>

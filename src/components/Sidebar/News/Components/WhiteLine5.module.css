@@ -11,3 +11,13 @@
     height: 240px;
     object-fit: cover;
 }
+@media all and (max-width: 1350px) {
+    .container h3{
+        font-size: 12px;
+        text-align: center;
+    }
+    .container img{
+        width: 140px;
+        height: 160px;
+    }
+}

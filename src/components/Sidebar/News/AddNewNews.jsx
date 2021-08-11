@@ -11,7 +11,6 @@ export default function AddNewNews ({name, post,image}) {
     return (
         <div>
             <div className={style.posts}>
-
                 <div className={style.photo}>
                     <img src={image ? image: userPhoto}/>
                     <div className={style.name}>{name}
@@ -27,8 +26,6 @@ export default function AddNewNews ({name, post,image}) {
                     <a src='#'><SiMinutemailer/> {minutemailer}</a>
                 </div>
             </div>
-
-
         </div>
     );
 }

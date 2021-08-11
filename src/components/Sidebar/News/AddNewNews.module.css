@@ -29,7 +29,6 @@
     margin: 10px;
     
 }
-
 .image {
     display: flex;
     justify-content: center;
@@ -53,7 +52,6 @@
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-indent: 2em;
-
 }
 @media all and (max-width: 1000px) {
     .posts{

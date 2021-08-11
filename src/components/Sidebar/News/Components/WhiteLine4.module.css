@@ -24,3 +24,15 @@
     margin-top: 5px;
     opacity: 0.9;
 }
+@media all and (max-width: 1350px) {
+    .container a{
+        font-size: 12px;
+    }
+    .container button{
+        font-size: 12px;
+        margin-top: -5px;
+    }
+    .container p{
+        font-size: 11px;
+    }
+}
