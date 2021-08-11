@@ -2,3 +2,12 @@
     background-color: white;
     margin-bottom: 20px;
 }
+.container h3{
+    font-size: 14px;
+    text-align: center;
+}
+.container img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}

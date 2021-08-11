@@ -15,24 +15,42 @@ export  default  function WhiteLine3() {
         <div className={style.container}>
             <h3>Latest Top News </h3>
             <ul>
-                <li><img src={Froots}/><a href='#'><p>Anyone can join</p></a>
-                    {ago1} min ago
-
+                <li>
+                    <div className={style.mainContent}>
+                        <img src={Froots}/>
+                        <span>
+                            <a href='#'>Anyone can join</a>
+                            <p>{ago1} min ago</p>
+                        </span>
+                    </div>
                 </li>
-
-                <li><img src={News}/><a href='#'><p>Anyone can join</p></a>
-                {ago2} min ago
-
+                <li>
+                    <div className={style.mainContent}>
+                        <img src={News}/>
+                        <span>
+                            <a href='#'>Anyone can join</a>
+                            <p>{ago2} min ago</p>
+                        </span>
+                    </div>
                 </li>
-
-                <li><img src={Adventure}/><a href='#'><p>Anyone can join</p></a>
-                    {ago1} min ago
-                    </li>
-
-                <li><img src={Sky}/><a href='#'><p>Anyone can join</p></a>
-                        {ago2} min ago
-                    </li>
-
+                <li>
+                    <div className={style.mainContent}>
+                        <img src={Adventure}/>
+                        <span>
+                            <a href='#'>Anyone can join</a>
+                            <p>{ago1} min ago</p>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div className={style.mainContent}>
+                        <img src={Sky}/>
+                        <span>
+                            <a href='#'>Anyone can join</a>
+                            <p>{ago1} min ago</p>
+                        </span>
+                    </div>
+                </li>
             </ul>
 
         </div>

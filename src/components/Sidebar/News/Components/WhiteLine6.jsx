@@ -15,27 +15,25 @@ export  default  function WhiteLine6() {
         <div className={style.container}>
             <h3>Friends Zone</h3>
             <ul>
-                <li><img src={Adventure}/><a href='#'><p>Travel the world </p></a>
-                    <div className={style.adventure}>
-                        {ago2} Mutual
-                        <a href='#'><BsHeart/></a>
-                    </div>
+                <li><img src={Adventure}/> <div className={style.adventure}><a href='#'>Travel the world </a>
+                <p>Mutual</p></div>
+                    <button href='#'><BsHeart/></button>
                 </li>
-                <li><img src={Food}/><a href='#'><p>Foodcort Nirala</p></a>
-                    <div className={style.food}>
-                        {ago1} Mutual
-                        <a href='#'><BsHeart/></a>
-                    </div>
+
+                <li><img src={Food}/> <div className={style.food}><a href='#'>
+                    Foodcort Nirala</a> <p>Mutual</p></div>
+                    <button href='#'><BsHeart/></button>
                 </li>
-                <li><img src={Drama}/><a href='#'><p>Rolin Theitar</p></a>
-                    <div className={style.drama}>
-                        {ago2} Mutual
-                        <a href='#'><BsHeart/></a>
-                    </div>
+
+                <li><img src={Drama}/><div className={style.drama}><a href='#'>Rolin Theitar</a>
+                    <p>Mutual</p></div>
+                    <button href='#'><BsHeart/></button>
+                    
                 </li>
-                <li><img src={Fitnes}/><a href='#'><p>Active Mind</p></a>
-                    <div className={style.fitnes}> {ago1} Mutual
-                    <a href='#'><BsHeart/></a></div>
+                <li><img src={Fitnes}/><div className={style.fitnes}><a href='#'>Active Mind</a>
+                    <p>{ago1} Mutual</p></div>
+                    <button href='#'><BsHeart/></button>
+                    
                 </li>
             </ul>
         </div>
