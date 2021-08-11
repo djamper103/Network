@@ -2,3 +2,19 @@
     background-color: white;
     margin-bottom: 20px;
 }
+.background img{
+    width: 200px;
+    object-fit: cover;
+}
+.photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: -40px 0 0 65px;
+}
+.name{
+    text-align: center;
+}
+.container p{
+    text-align: center;
+}

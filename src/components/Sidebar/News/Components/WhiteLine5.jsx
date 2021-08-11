@@ -7,7 +7,7 @@ import Advertizement from '../../../../assets/images/Advertizement.jpg'
 export  default  function WhiteLine5() {
 
     return(
-        <div className={style.WhiteLine5}>
+        <div className={style.container}>
             <h3>Advertizement</h3>
             <img src={Advertizement}/>
         </div>

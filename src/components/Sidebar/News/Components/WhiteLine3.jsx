@@ -14,25 +14,23 @@ export  default  function WhiteLine3() {
     return(
         <div className={style.container}>
             <h3>Latest Top News </h3>
-
             <ul>
-
                 <li><img src={Froots}/><a href='#'><p>Anyone can join</p></a>
-                    <div className={style.Adventure}>{ago1} min ago</div>
+                    {ago1} min ago
 
                 </li>
 
                 <li><img src={News}/><a href='#'><p>Anyone can join</p></a>
-                    <div className={style.Food}>{ago2} min ago</div>
+                {ago2} min ago
 
                 </li>
 
                 <li><img src={Adventure}/><a href='#'><p>Anyone can join</p></a>
-                    <div className={style.Drama}>{ago1} min ago</div>
+                    {ago1} min ago
                     </li>
 
                 <li><img src={Sky}/><a href='#'><p>Anyone can join</p></a>
-                    <div className={style.Fitnes}>{ago2} min ago</div>
+                        {ago2} min ago
                     </li>
 
             </ul>

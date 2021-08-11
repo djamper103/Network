@@ -9,8 +9,9 @@ export  default  function WhiteLine1({profile}) {
     return(
         <div className={style.container}>
             <div className={style.background}><img src={background}/></div>
-            <div className={style.photo}><img
-                src={profile.photos.small != null ? profile.photos.small : userPhoto}/></div>
+            <div className={style.photo}>
+                <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
+            </div>
             <div className={style.name}>{profile.fullName?profile.fullName:<p>Full Name</p>}</div>
             <p>Anyone can join us on the social network, if you want.We are glad to each of you</p>
         </div>

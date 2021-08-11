@@ -18,18 +18,20 @@ export  default  function WhiteLine2() {
                     <a href='#'><BsHeart/></a></div>
                 </li>
 
-                <li><img src={Food}/><a href='#'><p>Foodcort Nirala</p></a>
-                    <div className={style.food}> Food
-                    <a href='#'><BsHeart/></a></div>
+                <li><img src={Food}/><a href='#'></a>
+                    <div className={style.food}> <p>Foodcort Nirala</p> Food</div>
+                    <a href='#'><BsHeart/></a>
                 </li>
 
                 <li><img src={Drama}/><a href='#'><p>Rolin Theitar</p></a>
                     <div className={style.drama}> Drama
-                   <a href='#'><BsHeart/></a></div></li>
+                    <a href='#'><BsHeart/></a></div>
+                </li>
 
                 <li><img src={Fitnes}/><a href='#'><p>Active Mind</p></a>
                     <div className={style.fitnes}> Fitnes
-                   <a href='#'><BsHeart/></a></div></li>
+                    <a href='#'><BsHeart/></a></div>
+                </li>
 
             </ul>
 

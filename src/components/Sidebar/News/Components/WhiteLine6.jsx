@@ -12,32 +12,32 @@ export  default  function WhiteLine6() {
     const ago1 = Math.floor(Math.random() * 10);
     const ago2 = Math.floor(Math.random() * 10);
     return(
-        <div className={style.WhiteLine6}>
+        <div className={style.container}>
             <h3>Friends Zone</h3>
-
             <ul>
-
                 <li><img src={Adventure}/><a href='#'><p>Travel the world </p></a>
-                    <div className={style.Adventure}>{ago2} Mutual</div>
-                    <div className={style.BsHeart1}><a href='#'><BsHeart/></a></div>
+                    <div className={style.adventure}>
+                        {ago2} Mutual
+                        <a href='#'><BsHeart/></a>
+                    </div>
                 </li>
-
                 <li><img src={Food}/><a href='#'><p>Foodcort Nirala</p></a>
-                    <div className={style.Food}> {ago1} Mutual</div>
-                    <div className={style.BsHeart2}><a href='#'><BsHeart/></a></div>
+                    <div className={style.food}>
+                        {ago1} Mutual
+                        <a href='#'><BsHeart/></a>
+                    </div>
                 </li>
-
                 <li><img src={Drama}/><a href='#'><p>Rolin Theitar</p></a>
-                    <div className={style.Drama}> {ago2} Mutual</div>
-                    <div className={style.BsHeart3}><a href='#'><BsHeart/></a></div></li>
-
+                    <div className={style.drama}>
+                        {ago2} Mutual
+                        <a href='#'><BsHeart/></a>
+                    </div>
+                </li>
                 <li><img src={Fitnes}/><a href='#'><p>Active Mind</p></a>
-                    <div className={style.Fitnes}> {ago1} Mutual</div>
-                    <div className={style.BsHeart4}><a href='#'><BsHeart/></a></div></li>
-
+                    <div className={style.fitnes}> {ago1} Mutual
+                    <a href='#'><BsHeart/></a></div>
+                </li>
             </ul>
-
-
         </div>
     )
 }
