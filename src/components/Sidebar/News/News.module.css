@@ -86,3 +86,9 @@
     }
 
 }
+@media all and (max-width: 600px) {
+    .post{
+        margin: 50px 0px;
+    }
+
+}

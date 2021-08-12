@@ -55,5 +55,14 @@
         left: 0;
     }  
 }
+@media all and (max-width: 400px) {
+    .people{
+        padding: 15px;
+    }
+    .people span{
+        font-size: 20px;
+        left: 4px;
+    }  
+}
 
 
