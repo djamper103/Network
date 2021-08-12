@@ -5,7 +5,6 @@ import {
     BiNews,
     CgProfile,
     FiUsers,
-    IoHomeSharp,
     MdSlowMotionVideo,
 } from "react-icons/all";
 import React from "react";
@@ -23,9 +22,8 @@ const Sidebar = ({profile,}) => {
 
             </div>
             <div className={style.icon}>
-                {/*<span><NavLink to='/Home'> <IoHomeSharp/>&nbsp; Home</NavLink><br></br></span>*/}
                 <NavLink to='/Profile'> <CgProfile/>&nbsp; Profile</NavLink><br></br>
-                <NavLink to='/Messeges'><BiMessageRounded/>  &nbsp; Messeges</NavLink><br></br>
+                <NavLink to='/Messeges'><BiMessageRounded/>  &nbsp; Messages</NavLink><br></br>
                 <NavLink to='/Users'><FiUsers/>  &nbsp; Users</NavLink><br></br>
                 <NavLink to='/News'><BiNews/>  &nbsp; News</NavLink><br></br>
                 <NavLink to='/Video'><MdSlowMotionVideo/>  &nbsp; Video</NavLink><br></br>

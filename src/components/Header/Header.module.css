@@ -15,6 +15,9 @@
     padding: 0;
     z-index: 100;
 }
+.Header ul{
+    padding: 0 0 0 32px;
+}
 .Header a{
     font-size: 32px;
     color: black;
@@ -156,16 +159,17 @@
     background-color: white;
     display: flex;
     flex-direction:column;
-    width: 92%;
+    width: 103%;
     z-index: 2;
     background-color: white;
     position: relative;
-    top: -12px
+    top: -12px;
+    left:0px;
 }
 .menu1 a{
     position: relative;
     left: -26px;
-    font-size: 52px;
+    font-size: 41px;
 }
 
 .menu2{
@@ -173,57 +177,57 @@
 }
 
 }
-@media all and (max-width: 700px) {
-    .menu1{
-        width: 98%;
-    }
-     .menu1 a{
-        font-size: 45px;
-    }
-}
-@media all and (max-width: 600px) {
-    .menu1{
-        width: 103%;
-    }
-     .menu1 a{
-        font-size: 41px;
-    }
-}
-@media all and (max-width: 500px) {
-   
-    .menu1{
-        width: 105%;
-    }
-     .menu1 a{
-        font-size: 34px;
-    }
-}
 
-@media all and (max-width: 400px) {
-    .Header{
-        grid-template-columns: 1.5fr 2fr 2fr;
+
+@media all and (max-width: 700px) {
+    .menu1 a{
+       font-size: 34px;
+   }
+
+}
+@media all and (max-width: 570px) {
+     .menu1 a{
+        font-size: 32px;
+    }
+    .menu1{
+        width: 120%;
+    }
+}
+@media all and (max-width: 470px) {
+    .Login a{
+        margin-right: 5px;
     }
     .Header a{
         font-size: 22px;
     }
+    .logo{
+        margin-top: 2px;
+        margin-left: 0px;
+    }
     .menu{
-        top:20px;
-    
+        top:17px;
     }
-    .menu1{
-        width: 130%;
-    }
-     .menu1 a{
-        font-size: 32px;
-    }
+    .menu1 a{
+       font-size: 32px;
+   }
+   .menu1{
+       width: 150%;
+   }
 }
-@media all and (max-width: 300px) {
-    .Header{
-        grid-template-columns: 1.5fr 2fr 2fr;
-    }
+@media all and (max-width: 370px) {
     .Header a{
-        font-size: 19px;
+        font-size: 20px;
     }
-    
+    .menu{
+        top:16px;
+    }
+    .menu1 a{
+        font-size: 30px;
+    }
+   .menu1{
+       width: 175%;
+   }
 }
+
+
 
