@@ -71,7 +71,8 @@
 }
 @media all and (max-width: 1000px) {
     .post{
-        width: 740px;
+        width: 700px;
+
     }
         .leftSide{
             display: none;
@@ -82,6 +83,7 @@
 }
 @media all and (max-width: 850px) {
     .post{
+        width: 580px;
         margin: 50px 0px;
     }
 
@@ -89,6 +91,25 @@
 @media all and (max-width: 600px) {
     .post{
         margin: 50px 0px;
+        width: 500px;
     }
+
+
+}
+@media all and (max-width: 500px) {
+    .postForm{
+        margin-left: 25px;
+    }
+   .postForm button{
+    margin: 10px 0 10px 16%;
+   }
+   .newpost img{
+    margin: 10px;
+   }
+    
+
+}
+@media all and (max-width: 400px) {
+
 
 }

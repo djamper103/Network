@@ -40,7 +40,7 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
             </div>
             <div className={style.upMenu}>
                 <NavLink to='/Network'>Home</NavLink>
-                <NavLink to='/Messeges'>Message</NavLink>
+                <NavLink to='/Messeges'>Messages</NavLink>
                 <NavLink to='/News'>News</NavLink>
                 {isOwner? <div><button onClick={()=>setEditMode(true) }>Edit Profile</button></div>:''}
             </div>
@@ -65,7 +65,7 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                 <div className={style.upMainContent}>
                     <div className={style.upMainContentUl}>
                         <ul>
-                            <li><a href="#">Somerhing About Me</a></li>
+                            <li><a href="#">Something About Me</a></li>
                             <li> <a href="#">Working Zone</a></li>
                             <li> <a href="#">Educational Qualification</a></li>
                             <li> <a href="#">Work & Education</a></li>

@@ -1,8 +1,7 @@
 .newpost{
-background-color: white;
-display: flex;
-justify-content: center;
-width: 906px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
 .newpost img{
     width: 80px;
@@ -13,9 +12,8 @@ width: 906px;
     display: flex;
     flex-direction: column;
 }
-@media all and (max-width: 1000px) {
-    .newpost{
-        width: 740px;
-        }
+@media all and (max-width: 500px) {
+    .newpost img{
+        margin: 15px 0 0 10px;
+    }
 }
-

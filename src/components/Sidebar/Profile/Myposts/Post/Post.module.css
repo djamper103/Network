@@ -1,7 +1,6 @@
 .posts{
     margin-top: 20px;
     background-color: white;
-    width: 906px;
 }
 .photo{
     display: flex;
@@ -26,7 +25,7 @@
     margin-top: 10px;
 }
 .image img{
-    width: 830px;
+    width: 800px;
     height: 400px;
     border-radius: 30px;
     object-fit: cover;
@@ -43,7 +42,32 @@
     margin-bottom: 20px;
 }
 @media all and (max-width: 1000px) {
+    .image img{
+        width: 730px;
+        height: 400px;
+    }
+    
+}
+@media all and (max-width: 800px) {
+    .image img{
+        width: 570px;
+        height: 300px;
+    }
+    
+}
+@media all and (max-width: 600px) {
     .posts{
-        width: 740px;
-        }
+        margin-top: 10px;
+    }
+    .image img{
+        width: 380px;
+        height: 200px;
+    } 
+}
+@media all and (max-width: 400px) {
+    .image img{
+        width: 280px;
+        height: 160px;
+    }
+    
 }

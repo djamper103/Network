@@ -150,14 +150,9 @@ export const savePhoto = (file) => async (dispatch) => {
 export const saveProfileDataThunk = (profile) => async (dispatch,getState) => {
         const userId=getState().AuthReducer.userId
         let response = await ProfileApi.saveProfileData(profile)
-        debugger
         if (response.data.resultCode === 0) {
-            debugger
             dispatch(GetUsersProfileThunk(userId))
         }
-
-
-
 }
 
 

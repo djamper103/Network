@@ -33,54 +33,54 @@ const ProfileDataForm = ({onSubmitData,profile}) => {
         return (
             <div className={style.form}>
                 <form onSubmit={handleSubmit(onSubmit)}>
-
-                    <input name={'userId'} ref={register} placeholder="write your id"/>
-                    User Id
-                    <p>{errors.userId?.message}</p>
-
-                    <input name="lookingForAJobDescription" ref={register} placeholder="job description"/>
-                    job description
-                    <p>{errors.lookingForAJobDescription?.message}</p>
-
-                    <input name="fullName" ref={register} placeholder="write your full name"/>
-                    Full Name
-                    <p>{errors.fullName?.message}</p>
-
-                    <input name={'contacts.github'} ref={register} placeholder="github"/>
-                    Github
-                    <p>{errors.github?.message}</p>
-
-                    <input name="contacts.vk" ref={register} placeholder="vk.com"/>
-                    Vkontakte
-                    <p>{errors.vk?.message}</p>
-
-                    <input name="contacts.facebook" ref={register} placeholder="facebook"/>
-                    Facebook
-                    <p>{errors.facebook?.message}</p>
-
-                    <input name="contacts.instagram" ref={register} placeholder="instagram"/>
-                    Instagram
-                    <p>{errors.instagram?.message}</p>
-
-                    <input name="contacts.twitter" ref={register} placeholder="twitter"/>
-                    Twitter
-                    <p>{errors.twitter?.message}</p>
-
-                    <input name="contacts.website" ref={register} placeholder="website"/>
-                    Website
-                    <p>{errors.website?.message}</p>
-
-                    <input name="contacts.youtube" ref={register} placeholder="youtube"/>
-                    Youtube
-                    <p>{errors.youtube?.message}</p>
-
-                    <input name="contacts.mainLink" ref={register} placeholder="mainLink"/>
-                    Main link
-                    <p>{errors.mainLink?.message}</p>
-
-                    <input name={'lookingForAJob'} ref={register} type='checkbox'/>
-                    Looking for a job?
-                    <p>{errors.lookingForAJob?.message}</p>
+                    <div className={style.formMain}>
+                        <input name={'userId'} ref={register} placeholder="write your id"/>
+                        <span> User Id {errors.userId?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="lookingForAJobDescription" ref={register} placeholder="job description"/> 
+                        <span>job description{errors.lookingForAJobDescription?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="fullName" ref={register} placeholder="write your full name"/>
+                        <span> Full Name{errors.fullName?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name={'contacts.github'} ref={register} placeholder="github"/>
+                        <span>Github {errors.github?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.vk" ref={register} placeholder="vk.com"/>
+                        <span>Vkontakte {errors.vk?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.facebook" ref={register} placeholder="facebook"/>
+                        <span>Facebook {errors.facebook?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.instagram" ref={register} placeholder="instagram"/>
+                        <span>Instagram {errors.instagram?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.twitter" ref={register} placeholder="twitter"/>
+                        <span>Twitter {errors.twitter?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.website" ref={register} placeholder="website"/>
+                        <span>Website {errors.website?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.youtube" ref={register} placeholder="youtube"/>
+                        <span>Youtube {errors.youtube?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name="contacts.mainLink" ref={register} placeholder="mainLink"/>
+                        <span>Main link {errors.mainLink?.message}</span>
+                    </div>
+                    <div className={style.formMain}>
+                        <input name={'lookingForAJob'} ref={register} type='checkbox'/>
+                        <p> Looking for a job? {errors.lookingForAJob?.message}</p>
+                    </div>
 
                     <button type="submit">Save</button>
                 </form>

@@ -55,7 +55,7 @@
         flex-direction: column;
     }
     .messageInput img{
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .form img{
         position: static;
@@ -71,10 +71,6 @@
         width:120px;
         margin: 10% 20%;
         font-size: 16px;
-    }
-    .messageInput{
-        display: flex;
-        flex-direction: column;
     }
     .messageInput img{
         margin: 0 auto;

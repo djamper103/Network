@@ -11,7 +11,6 @@ const Post = ({name, post, profile,image}) => {
     return (
         <div>
             <div className={style.posts}>
-
                 <div className={style.photo}>
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
                     <div className={style.name}>{name} <p>{messages} min ago</p></div>
@@ -23,15 +22,13 @@ const Post = ({name, post, profile,image}) => {
                 }
                 <div className={style.post}>{post}</div>
                 
-                <div className={style.like}><a src='#'><BiLike/></a> {like} people like this
+                <div className={style.like}>
+                    <a src='#'><BiLike/></a> {like} people like this
                     <a src='#'><TiMessages/> {messages}</a>
                     <a src='#'><SiMinutemailer/> {minutemailer}</a>
                 </div>
                 </div>
-
             </div>
-
-
         </div>
     );
 }

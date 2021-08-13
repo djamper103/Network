@@ -54,7 +54,37 @@
     text-indent: 2em;
 }
 @media all and (max-width: 1000px) {
-    .posts{
-        width: 740px;
+
+        .image img{
+            width: 740px;
+            height: 400px;
         }
-} 
+}
+@media all and (max-width: 800px) {
+    .image img{
+        width: 600px;
+        height: 400px;
+    }
+
+}
+@media all and (max-width: 600px) {
+    .image img{
+        width: 400px;
+        height: 200px;
+    }
+
+}
+@media all and (max-width: 400px) {
+
+    .image img{
+        width: 300px;
+        height: 150px;
+    }
+    .like{
+        font-size: 18px;
+    }
+    .like a{
+        letter-spacing: 1px;
+        text-indent: 1em;
+    }
+}

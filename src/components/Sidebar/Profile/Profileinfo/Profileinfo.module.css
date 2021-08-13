@@ -53,7 +53,7 @@
     grid-area: upContent;
     display: flex;
     margin: 0 auto;
-    width: 906px;;
+    width: 906px;
 }
 
 .upImage {
@@ -82,7 +82,7 @@
 .upMain {
     height: 50px;
     background-color: white;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 20px;
     width: 100%;
 }
@@ -96,13 +96,14 @@
 .addPhoto {
     position: relative;
     top: 23%;
+    left: 3%;
 }
 
 .upMain span {
     opacity: 0;
     position: relative;
-    top: -38%;
-    left: 2.5%;
+    top: -42%;
+    left: 4%;
 }
 .mainContent {
     grid-area: mainContent;
@@ -140,14 +141,50 @@
 .middleMainContent {
     grid-area: middleMainContent;
     display: flex;
-    justify-content: center;   
+    margin: 0 auto;
+    width: 906px;
+}
+@media all and (max-width: 1300px) {
+    .upMainContent {  
+        width: 800px;
+    }
+    .upContent {
+        width: 800px;
+    }
+    .middleMainContent {
+        width: 800px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1em;
+        font-size: 20px;
+        left: 0px;
+        top:5px;
+    }
+    .upMenu button{
+
+        left: 200px;
+    }
+    .upMain {
+        font-size: 22px;
+    }
+    
+    .upMain a {
+        top: -40%;
+        letter-spacing: 1px;
+        text-indent: 1em;
+    }
+    
 }
 @media all and (max-width: 1000px) {
     .upMainContent {
-        width: 740px;
+        width: 730px;
     }
     .upContent {
-        width: 740px;
+        width: 730px;
+    }
+    .middleMainContent {
+        width: 730px;
     }
     .upMain input{
         width: 100px;
@@ -155,11 +192,237 @@
     .upMenu a {
         letter-spacing: 1px;
         text-indent: 1.5em;
-left: 70px;
+        left: 70px;
     }
     .upMenu button{
-
-        left: 125px;
+        font-size: 14px;
+        left: 155px;
+    }
+    .upMain {
+        font-size: 24px;
+    }
+    .upMain a {
+        top: -50%;
+        left: 50px;
+    }
+    .addPhoto {
+        top: 13%;
+        left: 15px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -56%;
+        left: 5%;
+    }
+    .upMain input {
+        width: 120px;
+    }
+}
+@media all and (max-width: 800px) {
+    .upMainContent {
+        width: 580px;
+    }
+    .upContent {
+        width: 580px;
+    }
+    .middleMainContent {
+        width: 580px;
+    }
+    .upMain input{
+        width: 100px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1em;
+        left: 70px;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 90px;
+    }
+    .upMain {
+        font-size: 18px;
+    }
+    .upMain a {
+        top: -30%;
+        left: 20px;
+    }
+    .addPhoto {
+        top: 22%;
+        left: 5px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -35%;
+        left: 4%;
+    }
+    .upMain input {
+        width: 100px;
+    }
+    .upImage {
+        text-align: center;
+        background-color: white;
+        margin-top: -140px;
+    }
+    .upImage img {
+        width: 180px;
+        height: 160px;
+    }
+    .status {
+        margin-top: 8px;
+    }
+    .status input {
+        width: 80px;
+        border-radius: 10px;
+        background-color: #efefef;
+        text-align: center;
+        font-size: 15px;
+    }
+    .upMainContentUl{
+        background-color: white; 
+        width: 220px;
+        margin-right: 15px;
+    }
+    .upMainContentUl ul{
+       padding: 10px;
     }
     
 }
+@media all and (max-width: 600px) {
+
+    .upMainContent {
+        width: 490px;
+        margin: 10px auto;
+    }
+    .upContent {
+        width: 490px;
+    }
+    .middleMainContent {
+        width: 490px
+    }
+    .upMenu a {
+        display: none;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 70px;
+    }
+    .upMain {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .upMain a {
+        top: -15%;
+        left: 25px;
+    }
+    .addPhoto {
+        top: 28%;
+        left: 5px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -20%;
+        left: 2%;
+    }
+    .upMain input {
+        width: 80px;
+    }
+    .upImage {
+        text-align: center;
+        background-color: white;
+        margin-top: -120px;
+    }
+    .upImage img {
+        width: 140px;
+        height: 140px;
+    }
+    .status {
+        margin-top: 8px;
+    }
+    .status input {
+        width: 80px;
+        border-radius: 10px;
+        background-color: #efefef;
+        text-align: center;
+        font-size: 15px;
+    }
+    .upMainContentUl{
+        background-color: white; 
+        width: 100px;
+        margin-right: 10px;
+    }
+    .upMainContentUl a{
+        font-size: 12px;
+    }
+    .upMainContentUl ul{
+        padding: 10px;
+    }
+    .UpMainContentForm{
+        background-color: white;
+        width: 400px;
+    }
+    
+    
+}
+@media all and (max-width: 500px) {
+    .upMainContent {
+        width: 400px;
+    }
+    .upContent {
+        width: 400px;
+    }
+    .middleMainContent {
+        width: 400px
+    }
+    .upMenu a {
+        display: none;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 70px;
+    }
+    .upMain {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+
+    .upMain a {
+        position: static;
+    }
+    .addPhoto {
+        top: 0%;
+        left: 2px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -60%;
+        left: 3%;
+    }
+    .upMain input {
+        width: 85px;
+    }
+
+    .upImage img {
+        width: 130px;
+        height: 137px;
+    }
+    .status {
+        margin: 8px 0 0 5px;
+    }
+    .upMainContentUl a{
+        font-size: 10px;
+    }
+
+
+    
+    
+}
+

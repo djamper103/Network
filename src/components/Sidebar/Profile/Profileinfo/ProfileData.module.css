@@ -6,8 +6,19 @@
     text-align: start;
     font-size: 22px;
 }
-.profileData button{
-    text-align: center;
-    font-size: 22px;
-    
+@media all and (max-width: 600px) {
+    .profileData h3{
+        font-size: 20px;
+    }
+    .profileData ul{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    .profileData h3{
+        font-size: 18px;
+    }
+    .profileData ul{
+        font-size: 18px;
+    }   
 }
