@@ -58,6 +58,7 @@ class App extends React.Component {
                     <Route exact path='/Users' render={() => <UsersContainer />} />
                     <Route exact path='/Network' render={() => <NewsContainer />} />
                     <Route exact path='/News' render={() => <NewsContainer />} />
+                    <Route exact path='/' render={() => <NewsContainer />} />
                     <Route exact path='/Video' render={() => <VideoContainer />} />
                     <Route exact path='/Login' render={() => <LoginContainer />} />
                     <Route exact path='/Registration' render={() => <RegistrationContainer />} />

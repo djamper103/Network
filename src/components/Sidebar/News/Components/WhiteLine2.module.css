@@ -1,11 +1,13 @@
 .container{
     background-color: white;
+    margin-bottom: 20px;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
 }
 .container h3{
     font-size: 14px;
     text-align: center;
 }
+
 .container img{
     width: 40px;
     height: 40px;
@@ -15,64 +17,56 @@
     padding: 0;
 }
 .container li{
+    display: flex;
     margin-left: 5px;
 }
 .container button{
     font-size: 16px;
     margin-top: -5px;
 }
-.container span{
-    margin-left: 5px;
+.container button:hover {
+    opacity: none;
+    box-shadow: none;
 }
+
 .adventure{
     font-size: 16px;
-    display: flex;
+    margin: 0 5px 0 5px;
 }
 .adventure p{
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.9;
 }
-.adventure button{
-    margin-left: 2px;
-}
 
 .food{
     font-size: 16px;
-    display: flex;
+    margin: 0 7px 0 5px;
 }
 .food p{
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.9;
 }
-.food button{
-    margin-left: 4px;
-}
 .drama{
     font-size: 16px;
-    display: flex;
+    margin: 0 29px 0 5px;
 }
 .drama p{
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.9;
 }
-.drama button{
-    margin-left: 25px;
-}
 .fitnes{
     font-size: 16px;
-    display: flex;
+    margin: 0 34px 0 5px;
 }
 .fitnes p{
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.9;
 }
-.fitnes button{
-    margin-left: 28px;
-}
+
 @media all and (max-width: 1350px) {
     .container a{
         font-size: 12px;
@@ -82,10 +76,8 @@
         margin-top: -5px;
     }
     .container p{
-        font-size: 9px;
+        font-size: 11px;
     }
- 
 }
-
 
 
