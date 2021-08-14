@@ -1,0 +1,26 @@
+.users{
+    margin-bottom: 20px;
+}
+.user img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+.followed{
+    margin: 10px 0;
+    display: flex;	
+    justify-content: center;
+}
+.followed button{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(219,26,26,.87);
+    font-size: 20px;
+    margin-left: -39px;
+}
+.info{
+    font-size: 20px;
+}

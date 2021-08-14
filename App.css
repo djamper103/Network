@@ -1,0 +1,36 @@
+.Content{
+  display:grid;
+  grid-template-areas:
+          'Header'
+          'maincontent'
+          'footer';
+  grid-template-rows: 0.2fr auto auto;
+  background-color:  #efefef;
+}
+.Maincontent{
+  grid-area: maincontent;
+  background-color:  #efefef;
+  background-position: center;
+  background-size: cover;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+a:hover { 
+
+  cursor: pointer !important;
+
+}
+button{
+  border: none;
+  background: transparent;
+}
+a{
+  text-decoration: none;
+}

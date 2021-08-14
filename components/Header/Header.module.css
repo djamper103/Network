@@ -1,0 +1,231 @@
+*{
+    transition: 0.2s;
+}
+
+.Header{
+    grid-area: Header;
+    background: white;
+    display:grid;
+    grid-template-areas:
+            'Logo HeaderMain Login ';
+    grid-template-columns: 1.4fr 5.8fr 4.7fr ;
+    font-family: 'Popins', sans-serif;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    z-index: 100;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.Header ul{
+    padding: 0 0 0 32px;
+}
+.Header a{
+    font-size: 32px;
+    color: black;
+}
+
+.Header a:hover {
+    color: #bf1650;
+}
+
+.logo{
+    color: black;
+    grid-area: Logo;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 21px;
+    left: 35px;
+    max-height: 50px;
+}
+.logo a{
+    font-size: 38px;
+    color: black;
+    text-decoration: none;
+
+}
+.HeaderMain{
+    grid-area: HeaderMain;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.HeaderMain a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-indent: 2.5em;
+    margin-top: 24px;
+}
+.Login{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+.Login a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-indent: 1.5em;
+    top: 25px;
+}
+.menu{
+    display: none;
+}
+
+@media all and (max-width: 1500px) {
+    .logo a{
+        font-size: 34px;
+        
+    }
+    .logo{
+        top: 25px;
+        left: 35px;
+    }
+}
+@media all and (max-width: 1250px) {
+    .Header{
+        grid-template-columns: 1.6fr auto 3fr ;
+    }
+    
+    .logo a{
+        font-size: 34px;
+    }
+    .logo{
+        top: 23px;
+        left: 35px;
+    }
+
+}
+
+
+@media all and (max-width: 1000px) {
+    .Header{
+        grid-template-columns: 1.6fr auto 3fr ;
+    }
+    .logo{
+        top: 24px;
+        left: 35px;
+    }
+    .Header a{
+        font-size: 29px;
+    }
+    .logo a{
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 850px) {
+    .menu{
+        display:block;
+    }
+
+.HeaderMain a{
+   display: none;
+}
+.Header{
+    grid-area: Header;
+    display:grid;
+    grid-template-areas:
+            'menu Logo Login ';
+    grid-template-columns: 1.5fr 2fr 2fr ;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+.logo{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.menu{
+    grid-area: menu;
+    position: relative;
+    top:22px;
+    left:0px;
+    z-index: 2;
+    max-height: 50px;
+    width: 135%;
+}
+.menu button:hover{
+    color: red;
+}
+.menu ul li{
+    list-style-type: none;
+}
+.menu1{
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    width: 103%;
+    z-index: 2;
+    background-color: white;
+    position: relative;
+    top: -12px;
+    left:0px;
+}
+.menu1 a{
+    position: relative;
+    left: -26px;
+    font-size: 41px;
+}
+
+.menu2{
+    transform: translateX(-130%);
+}
+
+}
+
+
+@media all and (max-width: 700px) {
+    .menu1 a{
+       font-size: 34px;
+   }
+
+}
+@media all and (max-width: 570px) {
+     .menu1 a{
+        font-size: 32px;
+    }
+    .menu1{
+        width: 120%;
+    }
+}
+@media all and (max-width: 470px) {
+    .Header a{
+        font-size: 22px;
+    }
+    .logo{
+        margin-top: 2px;
+        margin-left: 0px;
+    }
+    .menu{
+        top:17px;
+    }
+    .menu1 a{
+       font-size: 32px;
+   }
+   .menu1{
+       width: 150%;
+   }
+}
+@media all and (max-width: 370px) {
+    .Header a{
+        font-size: 18px;
+    }
+    .menu{
+        top:16px;
+    }
+    .menu1 a{
+        font-size: 30px;
+    }
+   .menu1{
+       width: 175%;
+   }
+}
+
+
+

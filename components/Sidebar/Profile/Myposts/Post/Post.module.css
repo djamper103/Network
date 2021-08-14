@@ -1,0 +1,88 @@
+.posts{
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.photo{
+    display: flex;
+}
+.name{
+    margin: 10px 0 0 5px;
+    font-size: 20px;
+}
+.name p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.photo img{
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 10px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.image img{
+    width: 800px;
+    height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.post{
+    font-size: 20px;
+    margin: 20px;
+}
+.like{
+    display: flex;
+    font-size: 20px;
+}
+.like a{
+    margin-bottom: 20px;
+}
+@media all and (max-width: 1000px) {
+    .image img{
+        width: 730px;
+        height: 400px;
+    }
+    
+}
+@media all and (max-width: 800px) {
+    .image img{
+        width: 570px;
+        height: 300px;
+    }
+    
+}
+@media all and (max-width: 600px) {
+    .posts{
+        margin-top: 10px;
+    }
+    .image img{
+        width: 380px;
+        height: 200px;
+    } 
+    .photo img{
+        width:100px;
+        height: 100px;
+    }
+}
+@media all and (max-width: 400px) {
+    .image img{
+        width: 280px;
+        height: 160px;
+    }
+    .photo img{
+        width:80px;
+        height: 80px;
+    }
+    .like{
+        font-size: 18px;
+    }
+    .like a{
+        letter-spacing: 1px;
+        text-indent: 1em;
+    }
+}

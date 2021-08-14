@@ -1,0 +1,91 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    'people main';
+    grid-template-columns: 0.2fr auto;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.people{
+    grid-area: people;
+    margin: 0px 50px 20px 20px;
+    background-color: white;
+    width: 240px;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.main{
+    grid-area: main;
+}
+.formInfo{
+    background-color: white;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formInfo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.form{
+    margin-bottom: 50px;
+}
+@media all and (max-width: 1600px) {
+    .main{
+        max-width: 1000px;
+    }
+    .people{
+        width: 200px;
+    }
+    .main{
+        margin-right: 50px;
+    }
+}
+@media all and (max-width: 1300px) {
+
+    .people{
+        margin: 0px 50px 20px 70px;
+        width: 200px;
+    }
+
+}
+@media all and (max-width: 1000px) {
+ 
+    .people{
+        margin: 0px 20px 20px 70px;
+        width: 130px;
+    }
+}
+@media all and (max-width: 850px) {
+    .container{
+        margin: 10px auto;
+    }
+    .main{
+        margin: 100px auto;
+        margin-right: 20px;
+    }
+    .people{
+        margin: 100px 20px 20px 20px;
+        width: 120px;
+    }
+
+
+}
+@media all and (max-width: 600px) {
+    .people{
+        width: 100px;
+        margin: 100px 20px 20px 20px;
+    }
+}
+@media all and (max-width: 400px) {
+    .people{
+        width: 80px;
+        margin: 100px 10px 20px 10px;
+    }
+}
+
+
+
+
+

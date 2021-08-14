@@ -1,0 +1,363 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    'mainContent ' 
+   'contactInfo ';
+    grid-template-rows: auto ;
+   max-width: 1200px;
+   max-height: 800px;
+   margin: 80px auto;
+}
+.mainContent{
+    grid-area: mainContent;
+    display: grid;
+    grid-template-areas:
+    ' aboutUs login';
+    grid-template-columns: auto ;
+}
+.login{
+    grid-area: login;
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 15px rgba(135, 132, 132, 0.2);
+}
+.login h3{
+    font-size: 32px;
+}
+.loginInput input{
+    border-radius: 20px;
+    line-height: 40px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}
+.aboutUs{
+    grid-area: aboutUs;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(135, 132, 132, 0.2);
+}
+.aboutUs p{
+    display: flex;
+
+}
+.aboutUs h3{
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+.rememberMe{
+    display: flex;
+    font-size: 24px;
+}
+.rememberMe input{
+    height: 20px; 
+    position: relative;
+    left: 10%;
+    top:5px;
+}
+.rememberMe span{
+    position: relative;
+    right: 15%;
+}
+
+.captcha input{
+    border-radius: 20px;
+    line-height: 40px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}
+.loginButton{
+    margin-top: 30px;
+}
+.loginButton button{
+    display: block;
+    margin: 0 auto 20px;
+
+    width: 300px;
+    height: 60px;
+    background-color: rgba(217,52,52,.87);
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.userInfo{
+    grid-area: contactInfo;
+    grid-template-areas:
+    'contactLinks'
+    ' userInfo ';
+    grid-template-rows: auto ;
+}
+.contactLinks{
+    grid-area: contactLinks;
+    margin: 50px 0 20px;
+    font-size: 34px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+.contactLinks a{
+   margin-left: 20px;
+   color: black;
+   transition: 0s;
+}
+.contactLinks span{
+    position: relative;
+    top:-4px;
+}
+.contactLinks a:hover {
+    color: #f00;
+    /*#ec5990;*/
+}
+.userInfo{
+    grid-area: userInfo;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+@media all and (max-width: 1300px) {
+    .container{
+       max-width: 960px;
+       max-height: 700px;
+       margin: 80px auto;
+    }
+    .aboutUs{
+        padding: 20px;
+        font-size: 19px;
+    }
+    .aboutUs h3{
+       font-size: 30px;
+       margin-bottom: 50px;
+    }
+    .login{
+        width: 480px;
+        height: 500px;
+    }
+    .login h3{
+        font-size: 30px;
+    }
+    .loginInput input{
+        border-radius: 20px;
+        line-height: 30px;
+        width: 260px;
+        font-size: 14px;
+    }
+    .rememberMe{
+        font-size: 22px;
+    }
+    .rememberMe input{
+        height: 20px; 
+        left: 10%;
+        top:3px;
+    }
+    .rememberMe span{
+        right: 10%;
+    } 
+    .captcha input{
+        border-radius: 20px;
+        line-height: 30px;
+        width: 260px;
+        font-size: 14px;
+    }
+    .loginButton{
+        margin-top: 30px;
+    }
+    .loginButton button{
+        margin: 0 auto 20px;
+        width: 260px;
+        height: 55px;
+        border-radius: 20px;
+        font-size: 22px;
+    }
+    .contactLinks{
+        margin: 40px 0 10px;
+        font-size: 30px;
+    }
+    .contactLinks span{
+        top:1px;
+    }
+    .userInfo{
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .container{
+       max-width: 780px;
+       max-height: 700px;
+       margin: 80px auto;
+    }
+    .aboutUs{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .aboutUs h3{
+       font-size: 26px;
+        margin: 10px 0 35px;
+    }
+    .login{
+        width: 390px;
+        height: 460px;
+    }
+    .login h3{
+        font-size: 26px;
+        margin: 15px;
+    }
+    .loginInput input{
+        border-radius: 20px;
+        line-height: 30px;
+        width: 240px;
+        font-size: 14px;
+    }
+    .rememberMe{
+        font-size: 20px;
+    }
+    .rememberMe input{
+        height: 20px; 
+        left: 2%;
+        top:0px;
+    }
+    .rememberMe span{
+        right: 22%;
+        position: relative;
+        top:-1px;
+    } 
+    .captcha img{
+        width: 200px;
+       height: 80px;
+    }
+    .captcha input{
+        border-radius: 20px;
+        line-height: 30px;
+        width: 240px;
+        font-size: 14px;
+    }
+    .loginButton{
+        margin-top: 12px;
+    }
+    .loginButton button{
+        margin: 0 auto 20px;
+        width: 240px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .contactLinks{
+        margin: 20px 0 0px;
+        font-size: 25px;
+    }
+    .contactLinks span{
+        top:6px;
+    }
+    .userInfo{
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 800px) {
+    .container{
+       max-width: 600px;
+       max-height: 700px;
+       margin: 100px auto;
+    }
+    .aboutUs{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .aboutUs h3{
+       font-size: 24px;
+    }
+    .login{
+        width: 300px;
+        height: 400px;
+    }
+    .login h3{
+        font-size: 24px;
+    }
+    .loginInput input{
+        border-radius: 20px;
+        line-height: 25px;
+        width: 200px;
+        font-size: 14px;
+    }
+    .rememberMe{
+        font-size: 14px;
+    }
+    .rememberMe input{
+        height: 20px; 
+        left: -5%;
+        top:0px;
+    }
+    .rememberMe span{
+        right: 26%;
+        top:7.4px;
+    } 
+    .captcha img{
+        width: 200px;
+       height: 60px;
+    }
+    .captcha input{
+        border-radius: 20px;
+        line-height: 25px;
+        width: 200px;
+        font-size: 14px;
+    }
+    .loginButton{
+        margin-top: 10px;
+    }
+    .loginButton button{
+        margin: 0 auto 10px;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container{
+       max-width: 600px;
+       max-height: 700px;
+       margin: 100px auto;
+    }
+    .aboutUs{
+        display: none;
+    }
+    .login{
+        width: 300px;
+        height: 400px;
+    }
+    .contactLinks{
+        margin: 20px 0 0px;
+        font-size: 20px;
+    }
+    .contactLinks span{
+        top:9px;
+    }
+    .userInfo{
+        display: flex;
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 400px) {
+
+    .contactLinks{
+        margin: 10px 0 0px;
+        font-size: 18px;
+    }
+    .contactLinks span{
+        top:14px;
+    }
+    .userInfo{
+        display: flex;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,125 @@
+.container ul{
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+}
+.container li{
+    list-style-type: none;
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.leftSide img{
+    width: 100px;
+    height: 100px;
+}
+.post{
+    width: 900px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newpost{
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    justify-content: center;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.newpost img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.newpost input{
+   margin-top: 30px;
+}
+.rigthSide{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.rigthSide img{
+    width: 100px;
+    height: 100px;
+}
+@media all and (max-width: 1550px) {
+    .post{
+        width: 720px;
+        }
+}
+@media all and (max-width: 1350px) {
+    .post{
+        width: 600px;
+        margin: 0 15px;
+        }
+        .leftSide{
+            width: 140px;
+            margin-left: 30px;
+        }
+        .rigthSide{
+            width: 140px;
+        }
+}
+@media all and (max-width: 1000px) {
+    .post{
+        width: 700px;
+
+    }
+        .leftSide{
+            display: none;
+        }
+        .rigthSide{
+            display: none;
+        }
+}
+@media all and (max-width: 850px) {
+    .post{
+        width: 590px;
+        margin: 50px 0px;
+    }
+
+}
+@media all and (max-width: 600px) {
+    .post{
+        margin: 50px 0px;
+        width: 500px;
+    }
+}
+@media all and (max-width: 500px) {
+    .post{
+        margin: 50px 0px;
+        width: 400px;
+    }
+    .postForm{
+        margin-left: 0px;
+    }
+    .postForm button{
+        margin: 10px 0 10px 18%;
+    }
+    .newpost img{
+        width: 100px;
+        height: 100px;
+        margin: 10px 0 10px 10px;
+    }
+}
+@media all and (max-width: 400px) {
+    .post{
+        margin: 50px 0px;
+        width: 320px;
+    }
+    .newpost img{
+        width: 80px;
+        height: 80px;
+        margin: 20px 0 20px 10px;
+    }
+}

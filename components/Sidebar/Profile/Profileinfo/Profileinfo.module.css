@@ -1,0 +1,473 @@
+.profileInfo {
+    display: grid;
+    grid-template: "header" "upMenu" "upContent" "mainContent";
+    grid-template-rows: auto;
+}
+
+.profileInfo a {
+    letter-spacing: 2px;
+    text-indent: 2em;
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    grid-area: header;
+    height: 300px;
+}
+
+.header img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.upMenu {
+    grid-area: upMenu;
+    display: flex;
+    justify-content: center; 
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+
+.upMenu a {
+    position: relative;
+    font-size: 24px;
+    top: 3px;
+}
+.upMenu button{
+    position: relative;
+    font-size: 22px;
+    top: 5px;
+    height: 30px;
+    width: 130px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(217,52,52,.87);
+    left: 175px;
+}
+
+
+.upContent {
+    grid-area: upContent;
+    display: flex;
+    margin: 0 auto;
+    width: 906px;
+}
+
+.upImage {
+    text-align: center;
+    background-color: white;
+    margin-top: -170px;
+}
+
+.upImage img {
+    width: 200px;
+    height: 184px;
+}
+
+.status {
+    margin-top: 11px;
+}
+
+.status input {
+    width: 100px;
+    border-radius: 10px;
+    background-color: #efefef;
+    text-align: center;
+    font-size: 15px;
+}
+
+.upMain {
+    height: 50px;
+    background-color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.upMain a {
+    display: inline-block;
+    position: relative;
+    top: -32%;
+}
+
+.addPhoto {
+    position: relative;
+    top: 23%;
+    left: 3%;
+}
+
+.upMain span {
+    opacity: 0;
+    position: relative;
+    top: -42%;
+    left: 4%;
+}
+.mainContent {
+    grid-area: mainContent;
+    display: grid;
+    grid-template: "upMainContent" "middleMainContent";
+    grid-row: auto;
+    margin-bottom: 50px;
+}
+
+.upMainContent {
+    grid-area: upMainContent;
+    display: flex;
+    justify-content: center; 
+    margin: 20px auto;
+    width: 906px;
+    
+}
+.upMainContent li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+.upMainContent ul{
+    font-size: 17px;
+}
+.upMainContentUl{
+    background-color: white; 
+    width: 300px;
+    margin-right: 20px;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.UpMainContentForm{
+    background-color: white;
+    width: 586px;
+    box-shadow: 0 0 8px rgb(135 132 132 / 20%);
+}
+.middleMainContent {
+    grid-area: middleMainContent;
+    display: flex;
+    margin: 0 auto;
+    width: 906px;
+}
+@media all and (max-width: 1300px) {
+    .upMainContent {  
+        width: 800px;
+    }
+    .upContent {
+        width: 800px;
+    }
+    .middleMainContent {
+        width: 800px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1em;
+        font-size: 20px;
+        left: 0px;
+        top:5px;
+    }
+    .upMenu button{
+
+        left: 200px;
+    }
+    .upMain {
+        font-size: 22px;
+    }
+    
+    .upMain a {
+        top: -40%;
+        letter-spacing: 1px;
+        text-indent: 1em;
+    }
+    
+}
+@media all and (max-width: 1000px) {
+    .upMainContent {
+        width: 730px;
+    }
+    .upContent {
+        width: 730px;
+    }
+    .middleMainContent {
+        width: 730px;
+    }
+    .upMain input{
+        width: 100px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1.5em;
+        left: 70px;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 155px;
+    }
+    .upMain {
+        font-size: 24px;
+    }
+    .upMain a {
+        top: -50%;
+        left: 50px;
+    }
+    .addPhoto {
+        top: 13%;
+        left: 15px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -56%;
+        left: 5%;
+    }
+    .upMain input {
+        width: 120px;
+    }
+}
+@media all and (max-width: 800px) {
+    .upMainContent {
+        width: 580px;
+    }
+    .upContent {
+        width: 580px;
+    }
+    .middleMainContent {
+        width: 580px;
+    }
+    .upMain input{
+        width: 100px;
+    }
+    .upMenu a {
+        letter-spacing: 1px;
+        text-indent: 1em;
+        left: 70px;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 90px;
+    }
+    .upMain {
+        font-size: 18px;
+    }
+    .upMain a {
+        top: -30%;
+        left: 20px;
+    }
+    .addPhoto {
+        top: 22%;
+        left: 5px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -35%;
+        left: 4%;
+    }
+    .upMain input {
+        width: 100px;
+    }
+    .upImage {
+        text-align: center;
+        background-color: white;
+        margin-top: -140px;
+    }
+    .upImage img {
+        width: 180px;
+        height: 160px;
+    }
+    .status {
+        margin-top: 8px;
+    }
+    .status input {
+        width: 80px;
+        border-radius: 10px;
+        background-color: #efefef;
+        text-align: center;
+        font-size: 15px;
+    }
+    .upMainContentUl{
+        background-color: white; 
+        width: 220px;
+        margin-right: 15px;
+    }
+    .upMainContentUl ul{
+        padding: 10px;
+    }
+    
+}
+@media all and (max-width: 600px) {
+
+    .upMainContent {
+        width: 490px;
+        margin: 10px auto;
+    }
+    .upContent {
+        width: 490px;
+    }
+    .middleMainContent {
+        width: 490px
+    }
+    .upMenu a {
+        display: none;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 70px;
+    }
+    .upMain {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .upMain a {
+        top: -15%;
+        left: 25px;
+    }
+    .addPhoto {
+        top: 28%;
+        left: 5px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -20%;
+        left: 2%;
+    }
+    .upMain input {
+        width: 80px;
+    }
+    .upImage {
+        text-align: center;
+        background-color: white;
+        margin-top: -120px;
+    }
+    .upImage img {
+        width: 140px;
+        height: 140px;
+    }
+    .status {
+        margin-top: 8px;
+    }
+    .status input {
+        width: 80px;
+        border-radius: 10px;
+        background-color: #efefef;
+        text-align: center;
+        font-size: 15px;
+    }
+    .upMainContentUl{
+        background-color: white; 
+        width: 100px;
+        margin-right: 10px;
+    }
+    .upMainContentUl a{
+        font-size: 12px;
+    }
+    .upMainContentUl ul{
+        padding: 10px;
+    }
+    .UpMainContentForm{
+        background-color: white;
+        width: 400px;
+    }
+    
+    
+}
+@media all and (max-width: 500px) {
+    .upMainContent {
+        width: 400px;
+    }
+    .upContent {
+        width: 400px;
+    }
+    .middleMainContent {
+        width: 400px
+    }
+    .upMenu a {
+        display: none;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 70px;
+    }
+    .upMain {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+
+    .upMain a {
+        position: static;
+    }
+    .addPhoto {
+        top: 0%;
+        left: 2px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -60%;
+        left: 3%;
+    }
+    .upMain input {
+        width: 85px;
+    }
+
+    .upImage img {
+        width: 130px;
+        height: 137px;
+    }
+    .status {
+        margin: 8px 0 0 5px;
+    }
+    .upMainContentUl a{
+        font-size: 10px;
+    }
+
+
+    
+    
+}
+@media all and (max-width: 400px) {
+    .upMainContent {
+        width: 320px;
+    }
+    .upContent {
+        width: 320px;
+    }
+    .middleMainContent {
+        width: 320px;
+    }
+    .upMain a {
+        display: none;
+    }
+    .addPhoto {
+        top: 35%;
+        left: 35px;
+    }
+    .upMain span {
+        opacity: 0;
+        position: relative;
+        top: -20%;
+        left: 20%;
+    }
+    .upMain input {
+        width: 100px;
+    }
+
+    .upImage img {
+        width: 130px;
+        height: 137px;
+    }
+    .status {
+        margin: 8px 0 0 5px;
+    }
+    .upMainContentUl a{
+        font-size: 10px;
+    }
+    .upMainContentUl{ 
+        width: 120px;
+    }
+
+    
+    
+}
+

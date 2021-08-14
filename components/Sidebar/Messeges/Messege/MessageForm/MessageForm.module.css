@@ -1,0 +1,82 @@
+.form{
+    margin: 0 auto;
+}
+.form input{
+    border-radius: 15px;
+    line-height: 40px;
+    width: 400px;
+    height:50px;
+    text-align: center;
+    background-color:  #efefef;
+    font-size: 25px;
+}
+.form img{
+    position: relative;
+    top: 40px;
+    right: 3%;
+}
+
+.form button{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(217,52,52,.87);
+    font-size: 18px;
+    margin: 5% 41%;
+}
+.form button:hover {
+    opacity: 1;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(87, 11, 11, 0.2);
+}
+@media all and (max-width: 1000px) {
+    .form input{
+        max-width: 280px;
+        font-size: 22px;
+    }
+    .form button{
+        width: 200px;
+        font-size: 18px;
+        margin: 5% 38%;
+    }
+}
+@media all and (max-width: 700px) {
+    .form input{
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .form button{
+        width: 180px;
+        margin: 10% 20%;
+    }
+    .messageInput{
+        display: flex;
+        flex-direction: column;
+    }
+    .messageInput img{
+        margin: 10px auto;
+    }
+    .form img{
+        position: static;
+    }
+    
+}
+@media all and (max-width: 400px) {
+    .form input{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .form button{
+        width:120px;
+        margin: 10% 20%;
+        font-size: 16px;
+    }
+    .messageInput img{
+        margin: 0 auto;
+    }
+    .form img{
+        position: static;
+    }
+    
+}
