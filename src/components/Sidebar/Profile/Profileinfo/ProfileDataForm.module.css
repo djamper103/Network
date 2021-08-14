@@ -56,3 +56,21 @@
         margin: 15px 0 15px 18%;
     }
 }
+@media all and (max-width: 400px) {
+    .formMain span{
+        margin: 5px 0 10px 30%;
+    }
+    .formMain p{
+        margin: 5px 0 10px 12%;
+    }
+    .form input{
+        width: 170px;
+        height: 25px;
+    }
+    .form button{
+        height: 30px;
+        width: 120px;
+        font-size: 20px;
+        margin: 15px 0 15px 12%;
+    }
+}

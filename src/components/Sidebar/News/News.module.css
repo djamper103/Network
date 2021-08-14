@@ -83,7 +83,7 @@
 }
 @media all and (max-width: 850px) {
     .post{
-        width: 580px;
+        width: 590px;
         margin: 50px 0px;
     }
 
@@ -93,23 +93,32 @@
         margin: 50px 0px;
         width: 500px;
     }
-
-
 }
 @media all and (max-width: 500px) {
-    .postForm{
-        margin-left: 25px;
+    .post{
+        margin: 50px 0px;
+        width: 400px;
     }
-   .postForm button{
-    margin: 10px 0 10px 16%;
-   }
-   .newpost img{
-    margin: 10px;
-   }
-    
-
+    .postForm{
+        margin-left: 0px;
+    }
+    .postForm button{
+        margin: 10px 0 10px 22%;
+    }
+    .newpost img{
+        width: 100px;
+        height: 100px;
+        margin: 10px 0 10px 10px;
+    }
 }
 @media all and (max-width: 400px) {
-
-
+    .post{
+        margin: 50px 0px;
+        width: 320px;
+    }
+    .newpost img{
+        width: 80px;
+        height: 80px;
+        margin: 20px 0 20px 10px;
+    }
 }

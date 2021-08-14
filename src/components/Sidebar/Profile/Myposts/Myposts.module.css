@@ -17,3 +17,9 @@
         margin: 15px 0 0 10px;
     }
 }
+@media all and (max-width: 400px) {
+    .newpost img{
+        width: 70px;
+        height: 70px;
+    }
+}

@@ -63,11 +63,25 @@
         width: 380px;
         height: 200px;
     } 
+    .photo img{
+        width:100px;
+        height: 100px;
+    }
 }
 @media all and (max-width: 400px) {
     .image img{
         width: 280px;
         height: 160px;
     }
-    
+    .photo img{
+        width:80px;
+        height: 80px;
+    }
+    .like{
+        font-size: 18px;
+    }
+    .like a{
+        letter-spacing: 1px;
+        text-indent: 1em;
+    }
 }
