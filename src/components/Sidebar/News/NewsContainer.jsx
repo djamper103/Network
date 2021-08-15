@@ -7,7 +7,6 @@ import News from "./News";
 let mapSatetoProps = (state) => {
     return {
         profile: state.profilePage.profile,
-
     }
 }
 

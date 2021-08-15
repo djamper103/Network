@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import style from "./News.module.css";
 import userPhoto from "../../../assets/images/default-avatar-profile-icon-male.jpg";
 import PostFormContainer from "../Profile/Myposts/Post/PostForm/PostFormContainer";
@@ -13,23 +13,28 @@ import AddNewNewsContainer from "./AddNewNewsContainer";
 
 const News = ({profile}) => {
 
-
     return (
         <div className={style.container}>
+
             <div className={style.leftSide}>
                 <WhiteLine1 profile={profile}/>
                 <WhiteLine2/>
                 <WhiteLine3/>
             </div>
+
             <div className={style.post}>
+
                 <div className={style.newpost}>
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto}/>
                     <div className={style.postForm}><PostFormContainer/></div>
                 </div>
+
                 <div className={style.newsMain}>
                     <AddNewNewsContainer />
                 </div>
+
             </div>
+
             <div className={style.rigthSide}>
                 <WhiteLine4/>
                 <WhiteLine5/>

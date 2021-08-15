@@ -1,15 +1,14 @@
 import {ProfileApi} from "../Api/Api";
-import lake from '../assets/images/158842813619331512.jpg'
-import sea from '../assets/images/mesmerising-views-unforgettabl.jpg'
-import nature from  '../assets/images/mountains.jpg'
+import lake from "../assets/images/158842813619331512.jpg"
+import sea from "../assets/images/mesmerising-views-unforgettabl.jpg"
+import nature from  "../assets/images/mountains.jpg"
 
 
-const ADD_POST='ADD-POST';
-const UPDATE_NEW_POST_TEXT='UPDATE-NEW-POST-TEXT';
-const GET_USERS_PROFILE='GET-USERS-PROFILE';
-const SET_STATUS='GET-STATUS'
-const SAVE_PHOTO_SUCCESS='SAVE-PHOTO-SUCCESS'
-
+const ADD_POST="ADD-POST";
+const UPDATE_NEW_POST_TEXT="UPDATE-NEW-POST-TEXT";
+const GET_USERS_PROFILE="GET-USERS-PROFILE";
+const SET_STATUS="GET-STATUS"
+const SAVE_PHOTO_SUCCESS="SAVE-PHOTO-SUCCESS"
 
 let intialState = {
     Posts: [
@@ -17,13 +16,15 @@ let intialState = {
                 "sed do eiusmod tempor incididunt ut labore et dolore\n" +
                 "magna aliqua. Ut enim ad minim veniam, quis nostrud\n" +
                 "exercitation ullamco laboris nisi ut aliquip ex ea\n" +
-                "commodo consequat.", id: "1", like: '1',image:sea},
-        {Name: "Dima", post: "Hi", id: "1", like: '1',image:lake },
+                "commodo consequat.", id: "1", like: "1",image:sea},
+        {Name: "Dima", post: "Hi", id: "1", like: "1",image:lake },
         {Name: "Oly", post: "React components allow you to split your user interface" +
                 " into separate parts. React components can be declared by subclassing React." +
-                "Component or React.PureComponent.", id: "1", like: '1',image:nature},
+                "Component or React.PureComponent.", id: "1", like: "1",image:nature},
     ],
-    Newtext: '',
+
+    Newtext: "",
+
     profile: {
         photos: {
             large: null,
@@ -41,41 +42,44 @@ let intialState = {
             youtube: null,
             mainLink: null,
         },
-
     },
-    status: 'Hello',
+
+    status: "Hello",
 }
 
 const Profile_reducer=(state=intialState,action)=>{
 
     switch (action.type) {
 
-
         case ADD_POST: {
             let newpost = {
-                Name:'Gleb',
+                Name:"Gleb",
                 post: action.text.post,
-                id: '4',
-                like: '1',
+                id: "4",
+                like: "1",
             }
             return{...state,
-                Newtext:'',
+                Newtext:"",
                 Posts:[...state.Posts,newpost]
             }
         }
+
         case UPDATE_NEW_POST_TEXT: {
             return {...state,Newtext:action.text}
         }
+
         case GET_USERS_PROFILE:{
             return {...state, profile: action.profile}
         }
+
         case SET_STATUS:{
             return{...state,status:action.status}
         }
+
         case SAVE_PHOTO_SUCCESS:{
             return {...state, profile: {...state.profile, photos: action.photos}
         }
-    }
+        }
 
         default:
             return state
@@ -93,6 +97,7 @@ export const  AddPostActionCreator=(text)=>{
 }
 
 export const UpdatePostActionCreator=(text)=>{
+
     return{
             type:UPDATE_NEW_POST_TEXT,
             text:text
@@ -100,6 +105,7 @@ export const UpdatePostActionCreator=(text)=>{
 }
 
 export const GetUsersProfile=(profile)=>{
+
     return{
         type:GET_USERS_PROFILE,
         profile
@@ -107,18 +113,19 @@ export const GetUsersProfile=(profile)=>{
 }
 
 export const SetStatus=(status)=>{
+
     return{
         type:SET_STATUS,
         status
     }
 }
 export const savePhotoSuccess=(photos)=>{
+
     return{
         type:SAVE_PHOTO_SUCCESS,
         photos
     }
 }
-
 
 export const GetUsersProfileThunk = (userId)=> async (dispatch) => {
     const response = await ProfileApi.getProfile(userId)
@@ -128,28 +135,31 @@ export const GetUsersProfileThunk = (userId)=> async (dispatch) => {
 export const GetStatusThunk = (userId) => async (dispatch) => {
     let response = await ProfileApi.getStatusAxios(userId)
     dispatch(SetStatus(response.data))
-
-
 }
 
 export const UpdateThunk = (status) => async (dispatch) => {
+
     let response = await ProfileApi.updateStatusAxios(status)
 
     if (response.data.resultCode === 0) {
         dispatch(SetStatus(status))
     }
-
 }
+
 export const savePhoto = (file) => async (dispatch) => {
+
     let response = await ProfileApi.savePhoto(file)
 
     if (response.data.resultCode === 0) {
         dispatch(savePhotoSuccess(response.data.data.photos))
     }
 }
+
 export const saveProfileDataThunk = (profile) => async (dispatch,getState) => {
+
         const userId=getState().AuthReducer.userId
         let response = await ProfileApi.saveProfileData(profile)
+
         if (response.data.resultCode === 0) {
             dispatch(GetUsersProfileThunk(userId))
         }

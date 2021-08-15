@@ -1,6 +1,4 @@
-
 export  let getUsers=(state)=>{
-
     return state.UsersPage.users
 }
 

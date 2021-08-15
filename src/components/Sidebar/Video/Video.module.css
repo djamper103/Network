@@ -1,8 +1,8 @@
 .container{
     display: grid;
     grid-template-areas:
-    'Header'
-    'maincontent';
+    "Header"
+    "maincontent";
     grid-template-rows: 0.2fr auto;
     background-color: white;
     box-shadow: 0 0 8px rgba(135, 132, 132, 0.5);
@@ -33,7 +33,6 @@
     justify-content: left;
     font-size: 24px;
 }
-
 .search button{
     margin: 3px 0 0 20px;
     height: 34px;
@@ -45,13 +44,13 @@
     font-size: 24px;
 }
 
-
 .mainContent{
     grid-area: maincontent;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .video{
     margin: 0 50px 50px;
 }
@@ -64,38 +63,39 @@
     height: 300px;
     object-fit: cover;
 }
+
 .post {
     margin-top: 5px;
- }
-
-.post button:hover{
-    color:red;
- }
-
+}
 .post span{
     font-size: 18px; 
 }
 .post button{
     font-size: 30px;
 }
+.post button:hover{
+    color:red;
+}
+
 @media all and (max-width: 1400px) {
     .container{
         margin: 50px auto;
         max-width: 1000px;
     }
 }
+
 @media all and (max-width: 1200px) {
     .container{
         max-width: 800px;
     }
-
-    
 }
+
 @media all and (max-width: 1000px) {
     .container{
         margin: 50px 10% 50px 10%;
         max-width: 800px;
     }
+
     .video{
         margin: 0px 20px 20px;
     }
@@ -108,23 +108,24 @@
         height: 200px;
         object-fit: cover;
     }
+
     .post {
         margin-left: -10px;
     }
-.post span{
-    font-size: 14px;
-}
-.post button{
-    font-size: 19px;
+    .post span{
+        font-size: 14px;
+    }
+    .post button{
+        font-size: 19px;
+    }
 }
 
-}
 @media all and (max-width: 850px) {
-   
     .container{
         margin: 130px auto;
         max-width: 650px;
     }
+
     .video{
         margin: 0px 20px 20px 0px;
     }
@@ -138,35 +139,36 @@
         height: 200px;
         object-fit: cover;
     }
+
     .post {
     position: relative;
     left: 21px;
     }
-.post span{
-    font-size: 14px;
-}
-.post button{
-    font-size: 19px;
-}
-.header{
-    margin-bottom: 50px;
+    .post span{
+        font-size: 14px;
+    }
+    .post button{
+        font-size: 19px;
+    }
+
+    .header{
+        margin-bottom: 50px;
+    }
+
+    .search {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .search input{
+        width: 200px;
+        height: 28px;
+        margin: 0 auto 5px;
+    }
+    .search button{
+        margin: 3%  auto 0;
+    }
 }
 
-.search {
-    flex-direction: column;
-    margin-top: 25px;
-}
-
-.search input{
-    width: 200px;
-    height: 28px;
-    margin: 0 auto 5px;
-}
-
-.search button{
-    margin: 3%  auto 0;
-}
-}
 @media all and (max-width: 600px) {
     .container{
         width: 100%;
@@ -179,7 +181,6 @@
     .search button{
         font-size: 20px;
     }
-
 }
 
 

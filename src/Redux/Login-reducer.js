@@ -1,23 +1,22 @@
-import {usersApi} from "../Api/Api";
-import {SetUserData} from "./Auth-reducer";
+const UPDATE_LOGIN_INFO="UPDATE-LOGIN-INFO"
+const ADD_LOGIN_INFO="ADD-LOGIN-INFO"
 
-const UPDATE_LOGIN_INFO='UPDATE-LOGIN-INFO'
-const ADD_LOGIN_INFO='ADD-LOGIN-INFO'
 let intialState={
 
     Login:[
-        { login:'www',
-            name:'name',
-            secondName:'2name',
-            password:'0000',
-            confirmPassword:'0000',
-            email:'1@gmail.com',
-            confirmEmail:'1@gmail.com',
+        { login:"www",
+            name:"name",
+            secondName:"2name",
+            password:"0000",
+            confirmPassword:"0000",
+            email:"1@gmail.com",
+            confirmEmail:"1@gmail.com",
         },
     ],
-    NewLogintext:'',
 
+    NewLogintext:"",
 }
+
 const Login_reducer=(state=intialState,action)=> {
 
     switch (action.type) {
@@ -35,7 +34,7 @@ const Login_reducer=(state=intialState,action)=> {
                 confirmEmail:action.data.confirmEmail,
             }
             return{...state,
-                NewLogintext:'',
+                NewLogintext:"",
                 Login:[...state.Login,loginData]
             }
         }
@@ -43,44 +42,26 @@ const Login_reducer=(state=intialState,action)=> {
         case UPDATE_LOGIN_INFO: {
             return {...state,NewLogintext: action.text}
         }
+
         default:
             return state
-
-
     }
 }
+
 export const  AddLoginInfoActionCreator=(data)=>{
 
     return{
-
         type:ADD_LOGIN_INFO,
         data
     }
 }
+
 export const UpdateLoginInfoActionCreator=(text)=>{
+    
     return{
         type:UPDATE_LOGIN_INFO,
         text
     }
 }
-
-// export const Loginingthunk = (email,password,rememberMe) => {
-//     return (dispatch) => {
-//         return (
-//             usersApi.LoginAxios(email,password,rememberMe)
-//                 .then(response=>{
-//                     if(response.data.resultCode===0){
-//                         dispatch(SetUserData(Id,email,login))
-//
-//                     }
-//                 })
-//
-//         )
-//
-//     }
-//
-// }
-
-
 
 export default Login_reducer;

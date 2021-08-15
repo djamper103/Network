@@ -1,15 +1,12 @@
-const SEARCH = 'SEARCH';
-
+const SEARCH = "SEARCH";
 
 let intialState = {
-    search: '',
+    search: "",
 }
-
 
 const Search_reducer = (state = intialState, action) => {
 
     switch (action.type) {
-
 
         case SEARCH: {
             return {...state,search:action.text}
@@ -19,7 +16,6 @@ const Search_reducer = (state = intialState, action) => {
             return state
     }
 }
-
 
 export const SearchSuccess=(text)=>{
     return{

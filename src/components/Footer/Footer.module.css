@@ -5,7 +5,7 @@
 .Footer {
     grid-area: footer;
     padding: 30px 200px;
-    font-family: 'Popins', sans-serif;
+    font-family: "Popins", sans-serif;
     background: #22242A;
     color: #fff;
     z-index: 1;
@@ -17,13 +17,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.AboutUs {
-    margin: 0 auto;
-    width: 40%;
-
-}
-
 .Container h3 {
     position: relative;
     color: #fff;
@@ -31,8 +24,13 @@
     margin-bottom: 15px;
 }
 
+.AboutUs {
+    margin: 0 auto;
+    width: 40%;
+}
+
 .AboutUs h3:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -52,7 +50,6 @@
 }
 
 .Links a {
-
     display: inline-block;
     font-size: 20px;
     background: rgb(40, 39, 39);
@@ -64,19 +61,18 @@
     text-decoration: none;
     width: 60px;
     height: 60px;
-
-
 }
 
 .Links a:hover {
-
     background: rgba(224, 11, 11, 0.9);
-
-
 }
 
+.QuickLinks {
+    position: relative;
+    width: 25%;
+}
 .QuickLinks h3:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -84,29 +80,22 @@
     height: 2px;
     background: #f00;
 }
-.QuickLinks {
-    position: relative;
-    width: 25%;
-}
-
 .QuickLinks   a{
     color: #999;
     text-decoration: none;
     margin-bottom: 10px;
     display: flex;
     list-style: none;
-
-
 }
 .QuickLinks  a:hover{
     color: #fff;
-
 }
+
 .Contact{
     width: 25%;
 }
 .Contact h3:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -121,70 +110,75 @@
     display: flex;
     list-style: none;
 }
-
 .Contact  a:hover{
     color: #fff;
 }
+
 .CopyrightText{
     width: 100%;
     text-align: center;
     color: #999;
     margin-top: 10px;
 }
+
 @media all and (max-width: 1300px) {
     .Footer {
         padding: 0;
-       font-size: 16px;
+        font-size: 16px;
     }
     .Footer h3 {
         margin-top: 20px;
-     }
+    }
+
     .AboutUs  {
         font-size: 14px;
     }
 }
 
 @media all and (max-width: 1000px) {
-    
     .Footer {
         padding: 0;
-       font-size: 16px;
+        font-size: 16px;
     }
+
     .Container h3 {
         font-size: 18px;
     }
+
     .AboutUs  {
         font-size: 12px;
     }
 }
+
 @media all and (max-width: 800px) {
     .Footer {
-       font-size: 13px;
+        font-size: 13px;
     }
+
     .Container h3 {
         font-size: 16px;
     }
     .Contact {
         font-size: 12px;
     }
+
     .Links a {
         background: rgb(40, 39, 39);
         width: 40px;
         height: 40px;  
     }
+
     .AboutUs  {
         font-size: 10px;
     }
 }
+
 @media all and (max-width: 600px) {
     .Footer {
-       font-size: 12px;
-    }
-    .Container h3 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .Footer h3:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -5px;
         left: 0;
@@ -192,22 +186,26 @@
         height: 2px;
         background: #f00;
     }
+
+    .Container h3 {
+        font-size: 16px;
+    }
+
     .Contact {
         font-size: 9px;
     }
+
     .AboutUs  {
         font-size: 8px;
     }
 }
+
 @media all and (max-width: 500px) {
     .Footer {
-       font-size: 10px;
-    }
-    .Container h3 {
-        font-size: 14px;
+        font-size: 10px;
     }
     .Footer h3:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -5px;
         left: 0;
@@ -215,15 +213,22 @@
         height: 2px;
         background: #f00;
     }
+
+    .Container h3 {
+        font-size: 14px;
+    }
+
     .Contact {
         font-size: 7px;
     }
+
     .Links a {
         background: rgb(40, 39, 39);
         width: 40px;
         height: 30px; 
         margin-bottom: 10px;
     }
+
     .AboutUs  {
         font-size: 7px;
     }
@@ -231,13 +236,10 @@
 
 @media all and (max-width: 400px) {
     .Footer {
-       font-size: 7px;
-    }
-    .Container h3 {
-        font-size: 10px;
+        font-size: 7px;
     }
     .Footer h3:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -5px;
         left: 0;
@@ -245,9 +247,15 @@
         height: 2px;
         background: #f00;
     }
+
+    .Container h3 {
+        font-size: 10px;
+    }
+
     .Contact {
         font-size: 6px;
     }
+    
     .AboutUs  {
         font-size: 5px;
     }

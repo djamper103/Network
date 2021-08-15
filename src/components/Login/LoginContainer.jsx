@@ -9,11 +9,8 @@ let mapSatetoProps = (state) => {
         isAuth: state.AuthReducer.isAuth,
         error: state.AuthReducer.error,
         captcha: state.AuthReducer.captcha,
-
-
     }
 }
-
 
 export default connect(mapSatetoProps, {Loginingthunk})(Login)
 

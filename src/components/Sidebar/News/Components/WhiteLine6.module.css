@@ -24,6 +24,7 @@
 .container span{
     margin-left: 5px;
 }
+
 .adventure{
     font-size: 16px;
     display: flex;
@@ -49,6 +50,7 @@
 .food button{
     margin-left: 6px;
 }
+
 .drama{
     font-size: 16px;
     display: flex;
@@ -61,6 +63,7 @@
 .drama button{
     margin-left: 28px;
 }
+
 .fitnes{
     font-size: 16px;
     display: flex;
@@ -73,6 +76,7 @@
 .fitnes button{
     margin-left: 33px;
 }
+
 @media all and (max-width: 1350px) {
     .container a{
         font-size: 12px;
@@ -84,7 +88,6 @@
     .container p{
         font-size: 9px;
     }
- 
 }
 
 

@@ -1,12 +1,14 @@
 import React from "react";
-import style from './ProfileData.module.css'
+import style from "./ProfileData.module.css"
 
 const ProfileData=({profile,status,isOwner,editMode})=>{
 
     return(
 
         <div className={style.profileData}>
+
             <h3>{profile.fullName ? profile.fullName :"I don't have a name only Id" }</h3>
+            
             <ul>
                 <li>{'My name:   '}{profile.fullName ? profile.fullName :"I don't have a name only Id" }</li>
                 <li>{'userId:   '}{profile.userId? profile.userId :"I don't have even Id"}</li>
@@ -21,6 +23,7 @@ const ProfileData=({profile,status,isOwner,editMode})=>{
                 <li>{'youtube:   '}{profile.contacts.youtube ? profile.contacts.youtube: "youtube.com..." }</li>
                 <li>{'mainLink:   '}{profile.contacts.mainLink ? profile.contacts.mainLink: "mainLink.com..." }</li>
             </ul>
+
         </div>
     )
 

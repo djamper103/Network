@@ -6,6 +6,7 @@
     margin: 50px auto;
     max-width: 1200px;
 }
+
 .people{
     grid-area: people;
     margin: 0px 50px 20px 20px;
@@ -13,9 +14,11 @@
     width: 240px;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
 }
+
 .main{
     grid-area: main;
 }
+
 .formInfo{
     background-color: white;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
@@ -31,6 +34,7 @@
 .form{
     margin-bottom: 50px;
 }
+
 @media all and (max-width: 1600px) {
     .main{
         max-width: 1000px;
@@ -42,21 +46,21 @@
         margin-right: 50px;
     }
 }
-@media all and (max-width: 1300px) {
 
+@media all and (max-width: 1300px) {
     .people{
         margin: 0px 50px 20px 70px;
         width: 200px;
     }
-
 }
+
 @media all and (max-width: 1000px) {
- 
     .people{
         margin: 0px 20px 20px 70px;
         width: 130px;
     }
 }
+
 @media all and (max-width: 850px) {
     .container{
         margin: 10px auto;
@@ -69,9 +73,8 @@
         margin: 100px 20px 20px 20px;
         width: 120px;
     }
-
-
 }
+
 @media all and (max-width: 600px) {
     .people{
         width: 100px;

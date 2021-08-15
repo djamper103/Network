@@ -17,12 +17,7 @@ export const  WithAuthRedirect=(Component)=>{
         }
     }
 
+let ConnectedAuthRedirectComponent=connect(mapSatetoPropsForRedurect)(RedirectComponent)
 
-
-    let ConnectedAuthRedirectComponent=connect(mapSatetoPropsForRedurect)(RedirectComponent)
-
-
-    return ConnectedAuthRedirectComponent
-
+return ConnectedAuthRedirectComponent
 }
-// export default WithAuthRedirect;

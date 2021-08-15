@@ -15,7 +15,6 @@
     top: 40px;
     right: 3%;
 }
-
 .form button{
     width: 200px;
     height: 40px;
@@ -30,6 +29,7 @@
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(87, 11, 11, 0.2);
 }
+
 @media all and (max-width: 1000px) {
     .form input{
         max-width: 280px;
@@ -41,6 +41,7 @@
         margin: 5% 38%;
     }
 }
+
 @media all and (max-width: 700px) {
     .form input{
         max-width: 280px;
@@ -50,18 +51,19 @@
         width: 180px;
         margin: 10% 20%;
     }
+    .form img{
+        position: static;
+    }
+
     .messageInput{
         display: flex;
         flex-direction: column;
     }
     .messageInput img{
         margin: 10px auto;
-    }
-    .form img{
-        position: static;
-    }
-    
+    }    
 }
+
 @media all and (max-width: 400px) {
     .form input{
         width: 200px;
@@ -72,11 +74,8 @@
         margin: 10% 20%;
         font-size: 16px;
     }
+
     .messageInput img{
         margin: 0 auto;
-    }
-    .form img{
-        position: static;
-    }
-    
+    }  
 }

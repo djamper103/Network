@@ -2,8 +2,8 @@ import nature from "../assets/images/mountains.jpg";
 import lake from "../assets/images/158842813619331512.jpg";
 import sea from "../assets/images/mesmerising-views-unforgettabl.jpg";
 
-const ADD_MESSEGE = 'ADD-MESSEGE'
-const UPDATE_NEW_MESSEGE_TEXT = 'UPDATE-NEW-MESSEGE-TEXT'
+const ADD_MESSEGE = "ADD-MESSEGE"
+const UPDATE_NEW_MESSEGE_TEXT = "UPDATE-NEW-MESSEGE-TEXT"
 
 let intialState = {
     Dialogs: [
@@ -11,6 +11,7 @@ let intialState = {
         {id: "7", name: "Vova",},
         {id: "2", name: "Vasy",}
     ],
+
     Messeges: [
         {id: "1",name: "Dima", messege: "Hi", image:nature},
         {id: "1",name: "Vova", messege: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n" +
@@ -21,19 +22,22 @@ let intialState = {
                 "commodo consequat.",image:sea},
 
     ],
-    NewMessegetext: ''
+
+    NewMessegetext: ""
 }
+
 const DialogPage_reducer = (state = intialState, action) => {
 
     switch (action.type) {
+        
         case ADD_MESSEGE: {
             let newmessege = {
-                id: '4',
-                messege: action.text.replace(/^[^"]*"|".*/g, ''),
+                id: "4",
+                messege: action.text.replace(/^[^"]*"|".*/g, ""),
             }
             return {
                 ...state,
-                NewMessegetext: '',
+                NewMessegetext: "",
                 Messeges: [...state.Messeges, newmessege]
             }
         }
@@ -43,24 +47,21 @@ const DialogPage_reducer = (state = intialState, action) => {
         }
         default:
             return state
-
-
     }
 }
 export const AddMessegeActionCreator = (text) => {
 
     return {
-
         type: ADD_MESSEGE,
         text: text
     }
 }
+
 export const UpdateMessegeActionCreator = (text) => {
     return {
         type: UPDATE_NEW_MESSEGE_TEXT,
         text: text
     }
 }
-
 
 export default DialogPage_reducer;

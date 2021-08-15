@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import MessageForm from "./MessageForm"
@@ -12,5 +12,4 @@ let mapSatetoProps = (state) => {
 }
 
 export default compose(
-    connect(mapSatetoProps, {AddMessegeActionCreator}),
-)(MessageForm)
+    connect(mapSatetoProps, {AddMessegeActionCreator}),)(MessageForm)

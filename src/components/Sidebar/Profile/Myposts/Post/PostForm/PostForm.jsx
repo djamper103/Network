@@ -8,15 +8,14 @@ const PostForm = ({AddPostActionCreator,}) => {
     const onSubmit = (data) => AddPostActionCreator(data)
 
     return (
-
         <div className={style.form}>
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input name="post" ref={register} placeholder="Say something" />
                 <button type="submit">Share</button>
             </form>
 
         </div>
-
     )
 }
 

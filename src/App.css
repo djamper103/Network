@@ -1,19 +1,24 @@
-.Content{
+.content{
   display:grid;
   grid-template-areas:
-          'Header'
-          'maincontent'
-          'footer';
+    "Header"
+    "maincontent"
+    "footer";
   grid-template-rows: 0.2fr auto auto;
   background-color:  #efefef;
 }
-.Maincontent{
+
+.mainContent{
   grid-area: maincontent;
   background-color:  #efefef;
   background-position: center;
   background-size: cover;
 }
 
+button{
+  border: none;
+  background: transparent;
+}
 
 button:focus {
   outline: none;
@@ -22,15 +27,13 @@ button:focus {
 input:focus {
   outline: none;
 }
+
+a{
+  text-decoration: none;
+}
+
 a:hover { 
 
   cursor: pointer !important;
 
-}
-button{
-  border: none;
-  background: transparent;
-}
-a{
-  text-decoration: none;
 }

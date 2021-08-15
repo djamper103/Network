@@ -3,7 +3,6 @@ import style from "./WhiteLine5.module.css";
 import Advertizement from '../../../../assets/images/Advertizement.jpg'
 
 
-
 export  default  function WhiteLine5() {
 
     return(

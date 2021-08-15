@@ -1,4 +1,4 @@
-import style from './Profileinfo.module.css'
+import style from "./Profileinfo.module.css"
 import StatusHook from "../Status/StatusHook";
 import userPhoto from "../../../../assets/images/default-avatar-profile-icon-male.jpg";
 import React, { useState } from "react";
@@ -30,37 +30,44 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
     const onSubmitData = (data) => {
         saveProfileDataThunk(data)
         setEditMode(false)
-
     }
 
     return (
         <div className={style.profileInfo}>
+
             <div className={style.header}>
                 <img src={Tent} />
             </div>
+
             <div className={style.upMenu}>
-                <NavLink to='/Network'>Home</NavLink>
-                <NavLink to='/Messeges'>Messages</NavLink>
-                <NavLink to='/News'>News</NavLink>
-                {isOwner? <div><button onClick={()=>setEditMode(true) }>Edit Profile</button></div>:''}
+                <NavLink to="/Network">Home</NavLink>
+                <NavLink to="/Messeges">Messages</NavLink>
+                <NavLink to="/News">News</NavLink>
+                {isOwner? <div><button onClick={()=>setEditMode(true) }>Edit Profile</button></div>:""}
             </div>
+
             <div className={style.upContent}>
                 <div className={style.upImage}>
                     <img src={profile.photos.small != null ? profile.photos.small : userPhoto} />
+
                     <div className={style.status}>
                         <StatusHook status={status} UpdateThunk={UpdateThunk} />
                     </div>
                 </div>
+
                 <div className={style.upMain}>
                     <div className={style.addPhoto}> <MdPhotoCamera /> Add photo</div>
+
                     <span>
                         {isOwner && <input type={"file"} onChange={onMainPhotoSelected} />}
                     </span>
+
                     <a href="https://www.google.com/intl/en/gmail/about/">Google</a>
                     <a href="https://uk-ua.facebook.com/react/">Facebook</a>
                     <a href="https://twitter.com/reactjs">Twitter</a>
                 </div>
             </div>
+
             <div className={style.mainContent}>
                 <div className={style.upMainContent}>
                     <div className={style.upMainContentUl}>
@@ -73,6 +80,7 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                             <li> <a href="#">Contact Details</a></li>
                         </ul>
                     </div>
+
                     <div className={style.UpMainContentForm}>
                         {editMode ?
                             <ProfileDataForm onSubmitData={onSubmitData} profile={profile} />
@@ -85,10 +93,10 @@ const Profileinfo = ({ savePhoto, profile, status, UpdateThunk, isOwner, savePro
                     <MypostsContainer profile={profile} />
                 </div>
             </div>
+            
         </div>
-    )
+        )
 }
-
 
 export default Profileinfo;
 

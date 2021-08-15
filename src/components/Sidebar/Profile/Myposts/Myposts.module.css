@@ -9,15 +9,18 @@
     height: 80px;
     border-radius: 40px;
 }
+
 .formInfo{
     display: flex;
     flex-direction: column;
 }
+
 @media all and (max-width: 500px) {
     .newpost img{
         margin: 15px 0 0 10px;
     }
 }
+
 @media all and (max-width: 400px) {
     .newpost img{
         width: 70px;

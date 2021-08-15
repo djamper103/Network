@@ -3,7 +3,6 @@
     grid-template: "header" "upMenu" "upContent" "mainContent";
     grid-template-rows: auto;
 }
-
 .profileInfo a {
     letter-spacing: 2px;
     text-indent: 2em;
@@ -15,7 +14,6 @@
     grid-area: header;
     height: 300px;
 }
-
 .header img {
     width: 100%;
     object-fit: cover;
@@ -30,7 +28,6 @@
     background-color: white;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
 }
-
 .upMenu a {
     position: relative;
     font-size: 24px;
@@ -48,7 +45,6 @@
     left: 175px;
 }
 
-
 .upContent {
     grid-area: upContent;
     display: flex;
@@ -61,7 +57,6 @@
     background-color: white;
     margin-top: -170px;
 }
-
 .upImage img {
     width: 200px;
     height: 184px;
@@ -70,7 +65,6 @@
 .status {
     margin-top: 11px;
 }
-
 .status input {
     width: 100px;
     border-radius: 10px;
@@ -86,11 +80,16 @@
     font-size: 20px;
     width: 100%;
 }
-
 .upMain a {
     display: inline-block;
     position: relative;
     top: -32%;
+}
+.upMain span {
+    opacity: 0;
+    position: relative;
+    top: -42%;
+    left: 4%;
 }
 
 .addPhoto {
@@ -99,12 +98,6 @@
     left: 3%;
 }
 
-.upMain span {
-    opacity: 0;
-    position: relative;
-    top: -42%;
-    left: 4%;
-}
 .mainContent {
     grid-area: mainContent;
     display: grid;
@@ -128,23 +121,27 @@
 .upMainContent ul{
     font-size: 17px;
 }
+
 .upMainContentUl{
     background-color: white; 
     width: 300px;
     margin-right: 20px;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
 }
+
 .UpMainContentForm{
     background-color: white;
     width: 586px;
     box-shadow: 0 0 8px rgb(135 132 132 / 20%);
 }
+
 .middleMainContent {
     grid-area: middleMainContent;
     display: flex;
     margin: 0 auto;
     width: 906px;
 }
+
 @media all and (max-width: 1300px) {
     .upMainContent {  
         width: 800px;
@@ -152,9 +149,11 @@
     .upContent {
         width: 800px;
     }
+
     .middleMainContent {
         width: 800px;
     }
+
     .upMenu a {
         letter-spacing: 1px;
         text-indent: 1em;
@@ -166,17 +165,17 @@
 
         left: 200px;
     }
+
     .upMain {
         font-size: 22px;
     }
-    
     .upMain a {
         top: -40%;
         letter-spacing: 1px;
         text-indent: 1em;
     }
-    
 }
+
 @media all and (max-width: 1000px) {
     .upMainContent {
         width: 730px;
@@ -184,12 +183,11 @@
     .upContent {
         width: 730px;
     }
+
     .middleMainContent {
         width: 730px;
     }
-    .upMain input{
-        width: 100px;
-    }
+
     .upMenu a {
         letter-spacing: 1px;
         text-indent: 1.5em;
@@ -199,6 +197,7 @@
         font-size: 14px;
         left: 155px;
     }
+
     .upMain {
         font-size: 24px;
     }
@@ -206,9 +205,8 @@
         top: -50%;
         left: 50px;
     }
-    .addPhoto {
-        top: 13%;
-        left: 15px;
+    .upMain input{
+        width: 120px;
     }
     .upMain span {
         opacity: 0;
@@ -216,10 +214,14 @@
         top: -56%;
         left: 5%;
     }
-    .upMain input {
-        width: 120px;
+
+    .addPhoto {
+        top: 13%;
+        left: 15px;
     }
+    
 }
+
 @media all and (max-width: 800px) {
     .upMainContent {
         width: 580px;
@@ -227,8 +229,13 @@
     .upContent {
         width: 580px;
     }
+
     .middleMainContent {
         width: 580px;
+    }
+
+    .upMain {
+        font-size: 18px;
     }
     .upMain input{
         width: 100px;
@@ -242,16 +249,9 @@
         font-size: 14px;
         left: 90px;
     }
-    .upMain {
-        font-size: 18px;
-    }
     .upMain a {
         top: -30%;
         left: 20px;
-    }
-    .addPhoto {
-        top: 22%;
-        left: 5px;
     }
     .upMain span {
         opacity: 0;
@@ -259,9 +259,12 @@
         top: -35%;
         left: 4%;
     }
-    .upMain input {
-        width: 100px;
+
+    .addPhoto {
+        top: 22%;
+        left: 5px;
     }
+
     .upImage {
         text-align: center;
         background-color: white;
@@ -271,6 +274,7 @@
         width: 180px;
         height: 160px;
     }
+
     .status {
         margin-top: 8px;
     }
@@ -281,6 +285,7 @@
         text-align: center;
         font-size: 15px;
     }
+
     .upMainContentUl{
         background-color: white; 
         width: 220px;
@@ -288,11 +293,10 @@
     }
     .upMainContentUl ul{
         padding: 10px;
-    }
-    
+    } 
 }
-@media all and (max-width: 600px) {
 
+@media all and (max-width: 600px) {
     .upMainContent {
         width: 490px;
         margin: 10px auto;
@@ -300,8 +304,14 @@
     .upContent {
         width: 490px;
     }
+
     .middleMainContent {
         width: 490px
+    }
+
+    .upMain {
+        font-size: 16px;
+        margin-top: 10px;
     }
     .upMenu a {
         display: none;
@@ -310,17 +320,9 @@
         font-size: 14px;
         left: 70px;
     }
-    .upMain {
-        font-size: 16px;
-        margin-top: 10px;
-    }
     .upMain a {
         top: -15%;
         left: 25px;
-    }
-    .addPhoto {
-        top: 28%;
-        left: 5px;
     }
     .upMain span {
         opacity: 0;
@@ -331,6 +333,12 @@
     .upMain input {
         width: 80px;
     }
+
+    .addPhoto {
+        top: 28%;
+        left: 5px;
+    }
+
     .upImage {
         text-align: center;
         background-color: white;
@@ -340,6 +348,7 @@
         width: 140px;
         height: 140px;
     }
+
     .status {
         margin-top: 8px;
     }
@@ -350,6 +359,7 @@
         text-align: center;
         font-size: 15px;
     }
+
     .upMainContentUl{
         background-color: white; 
         width: 100px;
@@ -361,30 +371,26 @@
     .upMainContentUl ul{
         padding: 10px;
     }
+
     .UpMainContentForm{
         background-color: white;
         width: 400px;
-    }
-    
-    
+    } 
 }
+
 @media all and (max-width: 500px) {
     .upMainContent {
         width: 400px;
     }
+
     .upContent {
         width: 400px;
     }
+
     .middleMainContent {
         width: 400px
     }
-    .upMenu a {
-        display: none;
-    }
-    .upMenu button{
-        font-size: 14px;
-        left: 70px;
-    }
+
     .upMain {
         font-size: 16px;
         display: flex;
@@ -393,13 +399,16 @@
         align-content: flex-start;
         justify-content: space-between;
     }
+    .upMenu a {
+        display: none;
+    }
+    .upMenu button{
+        font-size: 14px;
+        left: 70px;
+    }
 
     .upMain a {
         position: static;
-    }
-    .addPhoto {
-        top: 0%;
-        left: 2px;
     }
     .upMain span {
         opacity: 0;
@@ -411,37 +420,40 @@
         width: 85px;
     }
 
+    .addPhoto {
+        top: 0%;
+        left: 2px;
+    }
+
     .upImage img {
         width: 130px;
         height: 137px;
     }
+
     .status {
         margin: 8px 0 0 5px;
     }
+
     .upMainContentUl a{
         font-size: 10px;
     }
-
-
-    
-    
 }
+
 @media all and (max-width: 400px) {
     .upMainContent {
         width: 320px;
     }
+
     .upContent {
         width: 320px;
     }
+
     .middleMainContent {
         width: 320px;
     }
+
     .upMain a {
         display: none;
-    }
-    .addPhoto {
-        top: 35%;
-        left: 35px;
     }
     .upMain span {
         opacity: 0;
@@ -453,21 +465,25 @@
         width: 100px;
     }
 
+    .addPhoto {
+        top: 35%;
+        left: 35px;
+    }
+
     .upImage img {
         width: 130px;
         height: 137px;
     }
+
     .status {
         margin: 8px 0 0 5px;
     }
-    .upMainContentUl a{
-        font-size: 10px;
-    }
+
     .upMainContentUl{ 
         width: 120px;
     }
-
-    
-    
+    .upMainContentUl a{
+        font-size: 10px;
+    } 
 }
 

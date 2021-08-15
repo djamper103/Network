@@ -1,5 +1,5 @@
-import React from 'react'
-import style from './People.module.css'
+import React from "react"
+import style from "./People.module.css"
 import User from "./Users/User";
 import BasicPagination from "../../../Common/Paginator/Pagenation";
 
@@ -8,7 +8,6 @@ let Users = ({onPageChange, currentPage, users, followingProgress,
     FollowSuccess, UnFollowSuccess, totalUsersCount, pageSize}) => {
 
     return (
-
         <div className={style.usersPage}>
 
             <div className={style.pagination}>
@@ -23,10 +22,9 @@ let Users = ({onPageChange, currentPage, users, followingProgress,
                                     FollowSuccess={FollowSuccess} UnFollowSuccess={UnFollowSuccess}/>)
             }
             </div>
+
         </div>
     )
-
 }
-
 
 export default Users;

@@ -6,11 +6,13 @@
     text-align: start;
     font-size: 22px;
 }
+
 @media all and (max-width: 800px) {
     .profileData ul{
         padding: 0px 20px;
     }
 }
+
 @media all and (max-width: 600px) {
     .profileData h3{
         font-size: 20px;
@@ -20,6 +22,7 @@
         padding: 0px 15px;
     }
 }
+
 @media all and (max-width: 500px) {
     .profileData h3{
         font-size: 18px;

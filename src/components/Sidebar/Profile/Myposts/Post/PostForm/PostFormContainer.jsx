@@ -1,5 +1,5 @@
-import React from 'react';
-import {AddPostActionCreator} from '../../../../../../Redux/ProfilePage-reducer'
+import React from "react";
+import {AddPostActionCreator} from "../../../../../../Redux/ProfilePage-reducer"
 import {connect} from "react-redux";
 import {compose} from "redux";
 import PostForm from "./PostForm";

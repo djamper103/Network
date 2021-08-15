@@ -1,19 +1,20 @@
-import style from './Registaration.module.css'
+import style from "./Registaration.module.css"
 import React from "react";
 import {useForm} from "react-hook-form";
-import {yupResolver} from '@hookform/resolvers/yup';
+import {yupResolver} from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import {useHistory} from "react-router-dom";
 
+
 const schema = yup.object().shape({
-    login: yup.string().typeError('Должно быть строкой').required('Обязательно'),
-    name: yup.string().typeError('Должно быть строкой').required('Обязательно'),
-    secondName: yup.string().typeError('Должно быть строкой').required('Обязательно'),
-    age: yup.number().typeError('Должно быть числом').required('Обязательно'),
-    password: yup.string().typeError('Должно быть строкой').required('Обязательно'),
-    confirmPassword: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают').required('Обязательно'),
-    email: yup.string().email('Введите верный email').required('Обязательно'),
-    confirmEmail: yup.string().email('Введите верный email').oneOf([yup.ref('email')], 'Emails не совпадают').required('Обязательно')
+    login: yup.string().typeError("Должно быть строкой").required("Обязательно"),
+    name: yup.string().typeError("Должно быть строкой").required("Обязательно"),
+    secondName: yup.string().typeError("Должно быть строкой").required("Обязательно"),
+    age: yup.number().typeError("Должно быть числом").required("Обязательно"),
+    password: yup.string().typeError("Должно быть строкой").required("Обязательно"),
+    confirmPassword: yup.string().oneOf([yup.ref("password")], "Пароли не совпадают").required("Обязательно"),
+    email: yup.string().email("Введите верный email").required("Обязательно"),
+    confirmEmail: yup.string().email("Введите верный email").oneOf([yup.ref("email")], "Emails не совпадают").required("Обязательно")
 })
 
 const Registration = ({AddLoginInfoActionCreator,}) => {
@@ -24,7 +25,6 @@ const Registration = ({AddLoginInfoActionCreator,}) => {
         history.push("/Login");
     }
 
-
     const onSubmit = (data) => AddLoginInfoActionCreator(data)
 
     const {register, handleSubmit, errors,} = useForm(
@@ -34,10 +34,10 @@ const Registration = ({AddLoginInfoActionCreator,}) => {
     );
 
     return (
-
-
         <div className={style.Form}>
+
             <form onSubmit={handleSubmit(onSubmit)}>
+            
                 <input name="login" ref={register} placeholder="write login"/>
                 <p>{errors.login?.message}</p>
 
@@ -64,13 +64,10 @@ const Registration = ({AddLoginInfoActionCreator,}) => {
 
                 <button type="submit" onClick={Registration}>Registration</button>
 
-
             </form>
+
         </div>
-
     )
-
-
 }
 
 export default Registration;

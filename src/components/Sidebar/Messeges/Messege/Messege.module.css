@@ -18,6 +18,7 @@
 .formUp{
     display: flex;
 }
+
 .name{
     font-size: 16px;
     margin: 10px 0 0 20px;
@@ -29,19 +30,23 @@
     font-size: 24px;
     width: 90%;
 }
+
 @media all and (max-width: 1000px) {
 
 }
+
 @media all and (max-width: 800px) {
     .messege{
         font-size: 22px;
     }
 }
+
 @media all and (max-width: 600px) {
     .messege{
         font-size: 20px;
     }
 }
+
 @media all and (max-width: 400px) {
     .messege{
         margin: 20px 0px 20px 10px;

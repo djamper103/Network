@@ -1,12 +1,13 @@
-import React from 'react';
-import Messeges from './Messeges'
-import {AddMessegeActionCreator, UpdateMessegeActionCreator} from '../../../Redux/DialogsPage-reducer'
+import React from "react";
+import Messeges from "./Messeges"
+import {AddMessegeActionCreator, UpdateMessegeActionCreator} from "../../../Redux/DialogsPage-reducer"
 import {connect} from "react-redux";
 import {WithAuthRedirect} from "../../../Hoc/WithAuthRedirect";
 import {compose} from "redux";
 
 
 let mapSatetoProps = (state) => {
+
     return {
         DialogsPage: state.DialogsPage.Messeges,
         DialogsPeople: state.DialogsPage.Dialogs,
@@ -16,11 +17,9 @@ let mapSatetoProps = (state) => {
     }
 }
 
-
 export default compose(
     connect(mapSatetoProps, {UpdateMessegeActionCreator, AddMessegeActionCreator}),
-    WithAuthRedirect
-)(Messeges)
+    WithAuthRedirect)(Messeges)
 
 
 

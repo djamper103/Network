@@ -29,9 +29,9 @@
         margin: 10px 0 10px 5px;
         height: 35px;
         width: 130px;
-    }
-    
+    } 
 }
+
 @media all and (max-width: 500px) {
     .form{
         display: flex;
@@ -47,9 +47,9 @@
         width: 120px;
         font-size: 20px;
         margin: 10px 0 10px 20%;
-    }
-    
+    }  
 }
+
 @media all and (max-width: 400px) {
     .form{
         margin-left: 0px;
